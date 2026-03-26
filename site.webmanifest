@@ -7,7 +7,7 @@
   "orientation": "portrait",
   "background_color": "#0a0a0a",
   "theme_color": "#0a0a0a",
-  "description": "Systems Administrator and Cybersecurity Specialist. Linux, Docker, pentesting, and infrastructure automation.",
+  "description": "Systems Administrator and Cybersecurity Specialist. Linux, LXC, pentesting, and infrastructure automation.",
   "icons": [
     {
       "src": "/images/icon-192.png",

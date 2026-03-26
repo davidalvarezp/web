@@ -5,23 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ===================== SEO ===================== -->
-  <title>/whoami — David Álvarez · SysAdmin & Cybersecurity Specialist</title>
-  <meta name="description" content="About David Álvarez: Systems Administrator specialized in cybersecurity, infrastructure, networking, and web development. Based in Galicia, Spain." />
-  <meta name="keywords" content="david alvarez sysadmin cybersecurity pentesting linux docker networking Spain Galicia" />
-  <meta name="author" content="David Álvarez" />
+  <title>WhoAmI | davidalvarezp · SysAdmin & Cybersecurity Specialist</title>
+  <meta name="description" content="About davidalvarezp: Systems Administrator specialized in cybersecurity, infrastructure, networking, and web development. Based in Galicia, Spain." />
+  <meta name="keywords" content="sysadmin, cybersecurity, davidalvarezp, linux, lxc, docker, pentesting, networking, DevOps, security audit, web development" />
+  <meta name="author" content="davidalvarezp" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://davidalvarezp.com/whoami" />
 
-  <!-- ===================== OG ===================== -->
-  <meta property="og:type"        content="profile" />
-  <meta property="og:url"         content="https://davidalvarezp.com/whoami" />
-  <meta property="og:title"       content="/whoami — David Álvarez" />
-  <meta property="og:description" content="SysAdmin & Cybersecurity Specialist. Expert in Linux, Docker, pentesting, and web infrastructure." />
-  <meta property="og:image"       content="https://davidalvarezp.com/assets/img/og-image.png" />
+  <!-- ===================== OG / Twitter ===================== -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://davidalvarezp.com/" />
+  <meta property="og:title"       content="davidalvarezp · Systems Administrator & Cybersecurity Specialist" />
+  <meta property="og:description" content="Systems Administrator and Cybersecurity Specialist. Expert in Linux, LXC, network security, pentesting, and infrastructure automation." />
+  <meta property="og:image"       content="https://davidalvarezp.com/assets/img/logo_bg.png" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="twitter:title"      content="davidalvarezp · Systems Administrator & Cybersecurity Specialist" />
+  <meta name="twitter:description" content="Systems Administrator and Cybersecurity Specialist. Expert in Linux, LXC, network security, pentesting, and infrastructure automation." />
 
   <!-- ===================== Favicon ===================== -->
-  <link rel="icon"             href="https://davidalvarezp.com/images/favicon.webp" type="image/webp" />
-  <link rel="apple-touch-icon" href="https://davidalvarezp.com/images/favicon.webp" />
+  <link rel="icon"             href="/assets/img/favicon.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="/assets/img/favicon.webp" />
 
   <!-- ===================== Fonts ===================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,21 +32,21 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- ===================== Styles ===================== -->
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/cookies.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/cookies.css" />
 
   <!-- ===================== Schema.org ===================== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "David Álvarez",
+    "name": "davidalvarezp",
     "url": "https://davidalvarezp.com",
     "jobTitle": "Systems Administrator & Cybersecurity Specialist",
-    "description": "Systems Administrator specialized in cybersecurity, Linux, Docker, networking, and web development.",
-    "address": { "@type": "PostalAddress", "addressLocality": "Galicia", "addressCountry": "ES" },
+    "description": "Systems Administrator specialized in cybersecurity, Linux, LXC, networking, and web development.",
     "sameAs": [
       "https://github.com/davidalvarezp",
+      "https://www.youtube.com/@davidalvarezp",
       "https://www.linkedin.com/in/davidalvarezp"
     ]
   }
@@ -63,40 +66,43 @@
   <div class="container navbar__inner">
 
     <a href="/" class="navbar__logo" aria-label="davidalvarezp — home">
-      <span class="bracket">[</span>david<span class="at-sign">@</span>alvarez<span class="bracket">]</span><span class="logo-cursor" aria-hidden="true"></span>
+      <span class="bracket">[</span>davidalvarezp<span class="at-sign">@</span>com<span class="bracket">]</span><span class="logo-cursor" aria-hidden="true"></span>
     </a>
 
     <div class="navbar__links" role="menubar">
-      <a href="/"          class="navbar__link" role="menuitem">~/</a>
-      <a href="/whoami"    class="navbar__link active" role="menuitem">/whoami</a>
+      <a href="/"          class="navbar__link active" role="menuitem">~/</a>
+      <a href="/whoami"    class="navbar__link" role="menuitem">/whoami</a>
       <a href="/portfolio" class="navbar__link" role="menuitem">/portfolio</a>
       <a href="/services"  class="navbar__link" role="menuitem">/services</a>
-      <a href="/cv"        class="navbar__link" role="menuitem">/cv</a>
-      <a href="https://blog.davidalvarezp.com" class="navbar__link" role="menuitem">/blog</a>
+      <a href="/cv/AlvarezDavid.pdf"  class="navbar__link" role="menuitem" target="_blank">/cv</a>
+      <a href="https://blog.davidalvarezp.com" class="navbar__link" role="menuitem" target="_blank">/blog↗</a>
     </div>
 
     <div class="navbar__actions">
       <button class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+        <!-- Moon icon (shown in dark mode) -->
         <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
         </svg>
+        <!-- Sun icon (shown in light mode) -->
         <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
         </svg>
       </button>
+
       <button class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-  </div>
+  <!-- Mobile nav -->
   <nav id="mobile-menu" class="nav-mobile" aria-label="Mobile navigation">
-    <a href="/"          class="navbar__link">~/</a>
-    <a href="/whoami"    class="navbar__link active">/whoami</a>
+    <a href="/"          class="navbar__link active">~/</a>
+    <a href="/whoami"    class="navbar__link">/whoami</a>
     <a href="/portfolio" class="navbar__link">/portfolio</a>
     <a href="/services"  class="navbar__link">/services</a>
-    <a href="/cv"        class="navbar__link">/cv</a>
-    <a href="https://blog.davidalvarezp.com" class="navbar__link">/blog ↗</a>
+    <a href="/cv/AlvarezDavid.pdf"  class="navbar__link" target="_blank">/cv</a>
+    <a href="https://blog.davidalvarezp.com" class="navbar__link" target="_blank">/blog↗</a>
   </nav>
 </nav>
 
@@ -132,7 +138,7 @@
 
         <h1 class="about-hero__name" id="about-name">David Álvarez</h1>
 
-        <div class="about-hero__role">SysAdmin &amp; Cybersecurity Specialist · Galicia, Spain</div>
+        <div class="about-hero__role">Systems Administrator &amp; Cybersecurity Specialist · Galicia, Spain</div>
 
         <p class="about-hero__bio">
           Systems administrator with deep specialization in cybersecurity — from hardening production servers
@@ -142,19 +148,19 @@
 
         <div class="about-hero__tags" aria-label="Key skills">
           <span class="about-tag">Linux</span>
-          <span class="about-tag">Docker</span>
+          <span class="about-tag">LXC</span>
           <span class="about-tag">Nginx</span>
           <span class="about-tag">Pentesting</span>
           <span class="about-tag">Networking</span>
-          <span class="about-tag">Bash scripting</span>
-          <span class="about-tag">WordPress</span>
+          <span class="about-tag">Bash</span>
+          <span class="about-tag">Scripting</span>
           <span class="about-tag">SEO</span>
         </div>
 
         <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;">
-          <a href="/cv" class="btn btn-primary">
+          <a href="/cv/AlvarezDavid.pdf" target="_blank" class="btn btn-primary">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            Download CV
+            Open CV
           </a>
           <a href="mailto:contact@davidalvarezp.com" class="btn btn-ghost">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -182,14 +188,13 @@
 
       <div>
         <p style="font-size:0.97rem;color:var(--text-2);line-height:1.85;margin-bottom:18px;">
-          I'm a Systems Administrator with a specialization in Cybersecurity, certified through
-          the <strong style="color:var(--text-1);">IES de Teis</strong> program. My technical foundation covers
+          I'm a Systems Administrator specialized in Cybersecurity. My technical foundation covers
           the full spectrum of server management — from configuring bare-metal Linux systems
-          and containerized infrastructure with Docker, to designing and auditing secure network architectures.
+          and containerized infrastructures, to designing and auditing secure network architectures.
         </p>
         <p style="font-size:0.97rem;color:var(--text-2);line-height:1.85;margin-bottom:18px;">
           On the security side, I hold certifications from <strong style="color:var(--text-1);">Cisco</strong> in
-          Junior Cybersecurity Analysis and Ethical Hacking, and my hands-on experience includes
+          Junior Cybersecurity Analysis Career and Ethical Hacking, and my hands-on experience includes
           vulnerability scanning, penetration testing methodologies, threat monitoring, and access control policy design.
         </p>
         <p style="font-size:0.97rem;color:var(--text-2);line-height:1.85;">
@@ -201,15 +206,14 @@
 
       <div>
         <p style="font-size:0.97rem;color:var(--text-2);line-height:1.85;margin-bottom:18px;">
-          My philosophy is simple: <em style="color:var(--text-1);font-style:italic;">"making things work without anyone noticing."</em>
+          My philosophy is simple: <em style="color:var(--text-1);font-style:italic;">"making things work without anyone noticing"</em>.
           Good infrastructure is invisible — it just works, is secure by default, and scales gracefully.
           I'm driven by anticipating failure modes before they happen and building systems that are
           resilient, auditable, and maintainable by anyone on the team.
         </p>
         <p style="font-size:0.97rem;color:var(--text-2);line-height:1.85;margin-bottom:18px;">
-          Beyond purely technical work, I've run digital strategy and content production for
-          institutional channels — managing live streaming setups, video editing pipelines, SEO campaigns,
-          and performance analytics.
+          Beyond purely technical work, I've run digital strategy and content production — managing live streaming setups, 
+          video editing pipelines, SEO campaigns, and performance analytics.
         </p>
         <p style="font-size:0.97rem;color:var(--text-2);line-height:1.85;">
           Currently open to new projects in <strong style="color:var(--text-1);">cybersecurity consulting</strong>,
@@ -442,40 +446,24 @@
       <div>
         <div style="font-family:var(--font-mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-3);margin-bottom:24px;display:flex;align-items:center;gap:8px;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-          Work &amp; Projects
+          Work Experience
         </div>
 
         <div class="timeline" aria-label="Work experience timeline">
 
           <div class="timeline-item active">
-            <div class="timeline-item__date">
-              2023 — 2026
-              <span class="badge">Current</span>
-            </div>
-            <div class="timeline-item__title">Streaming &amp; Production Lead</div>
-            <div class="timeline-item__org">IES de Teis — YouTube Channel</div>
+            <div class="timeline-item__date">Feb'26 - <span class="badge">Current</span></div>
+            <div class="timeline-item__title">Systems Administrator</div>
+            <div class="timeline-item__org">Stellantis - Altia Consultores S.A.</div>
             <p class="timeline-item__desc">
-              Set up and managed the entire streaming infrastructure from scratch using OBS Studio.
-              Live event direction, post-production with DaVinci Resolve, channel management, and
-              audience growth strategy.
+              
             </p>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-item__date">2024 — 2025</div>
-            <div class="timeline-item__title">Full-Stack Developer &amp; SysAdmin</div>
-            <div class="timeline-item__org">ClickDeploy (Personal Project)</div>
-            <p class="timeline-item__desc">
-              Designed and built an automated SaaS deployment platform. Docker-based architecture,
-              Bash automation via webhooks, TrueNAS storage backend, Netdata monitoring,
-              and multi-layer security implementation at web, server, and database layers.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-item__date">2023 — 2024</div>
-            <div class="timeline-item__title">Web Developer &amp; SEO Specialist</div>
-            <div class="timeline-item__org">Quantum 21 LTD / Trendy Business Hub</div>
+            <div class="timeline-item__date">Mar'25 - Jun'25</div>
+            <div class="timeline-item__title">Developer, DB Admin &amp; SEO</div>
+            <div class="timeline-item__org">Quantum21 Ltd. (Cyprus)</div>
             <p class="timeline-item__desc">
               Built production WordPress sites with online booking systems, custom PHP components,
               WooCommerce integrations, and full technical SEO optimization. Improved page speed
@@ -484,13 +472,23 @@
           </div>
 
           <div class="timeline-item">
+            <div class="timeline-item__date">Sep'23 - Jan'26</div>
+            <div class="timeline-item__title"> Streaming Manager</div>
+            <div class="timeline-item__org">youtube.com/@Webteis</div>
+            <p class="timeline-item__desc">
+              Set up and managed the entire streaming infrastructure from scratch using OBS Studio.
+              Live event direction, pre&amp;post-production with DaVinci Resolve, channel management, and
+              audience growth strategy.
+            </p>
+          </div>
+
+          <div class="timeline-item">
             <div class="timeline-item__date">2020 — present</div>
             <div class="timeline-item__title">Personal Site &amp; Content</div>
             <div class="timeline-item__org">davidalvarezp.com</div>
             <p class="timeline-item__desc">
-              Personal technical blog and portfolio. Initially built with Hugo + LoveIT theme,
-              migrating to a fully custom HTML/CSS/JS stack for complete control over design, SEO,
-              and performance.
+              Personal technical blog and portfolio. Started on Blogger, moved to Wix, WordPress and GoHugo, 
+              now on a fully custom HTML/CSS/JS stack for complete control over design, SEO, and performance.
             </p>
           </div>
 
@@ -507,12 +505,9 @@
         <div class="timeline" aria-label="Education timeline">
 
           <div class="timeline-item active">
-            <div class="timeline-item__date">
-              2025 — 2026
-              <span class="badge">Current</span>
-            </div>
+            <div class="timeline-item__date">Sep'25 - Jun'26 <span class="badge">Current</span></div>
             <div class="timeline-item__title">Cybersecurity Specialization</div>
-            <div class="timeline-item__org">IES de Teis · Vigo, Galicia</div>
+            <div class="timeline-item__org">IES Teis · Vigo, Galicia</div>
             <p class="timeline-item__desc">
               Advanced specialization program covering ethical hacking, incident response, SIEM,
               forensic analysis, and network intrusion detection.
@@ -520,9 +515,9 @@
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-item__date">2023 — 2025</div>
-            <div class="timeline-item__title">Higher Technician — Network SysAdmin</div>
-            <div class="timeline-item__org">IES de Teis · Vigo, Galicia</div>
+            <div class="timeline-item__date">Sep'23 - Jun'2025</div>
+            <div class="timeline-item__title">Higher Technician - Network SysAdmin</div>
+            <div class="timeline-item__org">IES Teis · Vigo, Galicia</div>
             <p class="timeline-item__desc">
               CFGS in Network Systems Administration. Covered server administration,
               virtualization, networking, databases, and scripting on both Linux and Windows environments.
@@ -549,73 +544,73 @@
 
     <div class="cert-grid">
 
-      <a href="/files/pdf/certificates/Junior_Cybersecurity_Analyst_Career.pdf"
+      <a href="/files/cert/Junior_Cybersecurity_Analyst_Career.pdf"
          class="cert-card fade-in fade-in--delay-1"
          target="_blank" rel="noopener noreferrer"
          aria-label="Junior Cybersecurity Analyst Career certificate from Cisco, 2026">
         <span class="cert-card__issuer">Cisco</span>
-        <span class="cert-card__name">Junior Cybersecurity Analyst Career Path</span>
-        <span class="cert-card__year">2026 · View PDF ↗</span>
+        <span class="cert-card__name">Junior Cybersecurity Analyst</span>
+        <span class="cert-card__year">2026 · Certificate ↗</span>
       </a>
 
-      <a href="/files/pdf/certificates/Ethical_Hacker.pdf"
+      <a href="/files/cert/Ethical_Hacker.pdf"
          class="cert-card fade-in fade-in--delay-1"
          target="_blank" rel="noopener noreferrer"
          aria-label="Ethical Hacker certificate from Cisco, 2026">
         <span class="cert-card__issuer">Cisco</span>
         <span class="cert-card__name">Ethical Hacker</span>
-        <span class="cert-card__year">2026 · View PDF ↗</span>
+        <span class="cert-card__year">2026 · Certificate ↗</span>
       </a>
 
-      <a href="/files/pdf/certificates/Network_Technician_Career_Path.pdf"
+      <a href="/files/cert/Network_Technician_Career_Path.pdf"
          class="cert-card fade-in fade-in--delay-2"
          target="_blank" rel="noopener noreferrer"
          aria-label="Network Technician Career certificate from Cisco, 2026">
         <span class="cert-card__issuer">Cisco</span>
         <span class="cert-card__name">Network Technician Career Path</span>
-        <span class="cert-card__year">2026 · View PDF ↗</span>
+        <span class="cert-card__year">2026 · Certificate ↗</span>
       </a>
 
-      <a href="/files/pdf/certificates/Networking_Basics.pdf"
+      <a href="/files/cert/Networking_Basics.pdf"
          class="cert-card fade-in fade-in--delay-2"
          target="_blank" rel="noopener noreferrer"
          aria-label="Networking Basics certificate from Cisco, 2026">
         <span class="cert-card__issuer">Cisco</span>
         <span class="cert-card__name">Networking Basics</span>
-        <span class="cert-card__year">2026 · View PDF ↗</span>
+        <span class="cert-card__year">2026 · Certificate ↗</span>
       </a>
 
-      <a href="/files/pdf/certificates/Bash_Scripting.pdf"
+      <a href="/files/cert/Bash_Scripting.pdf"
          class="cert-card fade-in fade-in--delay-3"
          target="_blank" rel="noopener noreferrer"
          aria-label="Bash Scripting certificate from DataCamp, 2025">
         <span class="cert-card__issuer">DataCamp</span>
         <span class="cert-card__name">Bash Scripting</span>
-        <span class="cert-card__year">2025 · View PDF ↗</span>
+        <span class="cert-card__year">2025 · Certificate ↗</span>
       </a>
 
-      <a href="/files/pdf/certificates/Desarrollo_Web.pdf"
+      <a href="https://skillshop.exceedlms.com/student/award/wuJBx6a7eBbKGYzbdbktumV2"
          class="cert-card fade-in fade-in--delay-3"
          target="_blank" rel="noopener noreferrer"
          aria-label="Web Development HTML and CSS certificate from Google, 2020">
         <span class="cert-card__issuer">Google</span>
-        <span class="cert-card__name">Web Development: HTML &amp; CSS</span>
-        <span class="cert-card__year">2020 · View PDF ↗</span>
+        <span class="cert-card__name">Web Development</span>
+        <span class="cert-card__year">2020 · Certificate ↗</span>
       </a>
 
-      <a href="/files/pdf/certificates/Desarrollo_Apps.pdf"
+      <a href="https://skillshop.exceedlms.com/student/award/D6JejKu7XMeKRsi8NGhQyG8v"
          class="cert-card fade-in fade-in--delay-3"
          target="_blank" rel="noopener noreferrer"
          aria-label="Mobile App Development certificate from Google, 2020">
         <span class="cert-card__issuer">Google</span>
         <span class="cert-card__name">Mobile App Development</span>
-        <span class="cert-card__year">2020 · View PDF ↗</span>
+        <span class="cert-card__year">2020 · Certificate ↗</span>
       </a>
 
       <div class="cert-card fade-in fade-in--delay-4" style="cursor:default;border-style:dashed;">
         <span class="cert-card__issuer" style="color:var(--text-3);">In progress</span>
         <span class="cert-card__name" style="color:var(--text-2);">More certifications incoming…</span>
-        <span class="cert-card__year" style="color:var(--text-3);">2026</span>
+        <span class="cert-card__year" style="color:var(--text-3);">Studying...</span>
       </div>
 
     </div>
@@ -637,14 +632,14 @@
 
       <div class="philosophy-block fade-in">
         <p class="philosophy-block__quote">
-          "Good security isn't about adding locks everywhere — it's about understanding what actually needs protecting and building the right systems around it. Most breaches happen through neglected fundamentals."
+          "Good security isn't about adding locks everywhere - it's about understanding what actually needs protecting and building the right systems around it. Most breaches happen through neglected fundamentals."
         </p>
         <span class="philosophy-block__source">// on security</span>
       </div>
 
       <div class="philosophy-block fade-in fade-in--delay-1">
         <p class="philosophy-block__quote">
-          "The best infrastructure is invisible. If people notice the server, something has gone wrong. My goal is for everything to just work — reliably, securely, and without drama."
+          "The best infrastructure is invisible. If people notice the server, something has gone wrong. My goal is for everything to just work - reliably, securely, and without drama."
         </p>
         <span class="philosophy-block__source">// on infrastructure</span>
       </div>
@@ -704,13 +699,16 @@
     <div class="footer__inner">
 
       <div class="footer__brand">
-        <span class="footer__logo">[david@alvarez]</span>
+        <span class="footer__logo">[davidalvarezp@com]</span>
         <p class="footer__tagline">
-          Systems Administrator &amp; Cybersecurity Specialist. Building secure, efficient infrastructure from Galicia, Spain.
+          SysAdmin &amp; CyberSec.
         </p>
         <div class="footer__social" aria-label="Social links">
           <a href="https://github.com/davidalvarezp" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@davidalvarezp" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a2.966 2.966 0 0 0-2.09-2.093C19.4 3.5 12 3.5 12 3.5s-7.399 0-9.409.593a2.966 2.966 0 0 0-2.09 2.093A30.37 30.37 0 0 0 0 12a30.37 30.37 0 0 0 .501 5.814 2.966 2.966 0 0 0 2.09 2.093C4.601 20.5 12 20.5 12 20.5s7.399 0 9.409-.593a2.966 2.966 0 0 0 2.09-2.093A30.37 30.37 0 0 0 24 12a30.37 30.37 0 0 0-.502-5.814zM9.75 15.568V8.432L15.568 12 9.75 15.568z"/></svg>
           </a>
           <a href="https://www.linkedin.com/in/davidalvarezp" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -721,11 +719,10 @@
       <div>
         <div class="footer__col-title">Navigation</div>
         <nav class="footer__links" aria-label="Footer navigation">
-          <a href="/"          class="footer__link">Homepage</a>
-          <a href="/whoami"    class="footer__link">/whoami</a>
-          <a href="/portfolio" class="footer__link">/portfolio</a>
-          <a href="/services"  class="footer__link">/services</a>
-          <a href="/cv"        class="footer__link">/cv</a>
+          <a href="/"          class="footer__link">Home</a>
+          <a href="/legal"  class="footer__link">Legal Notice</a>
+          <a href="/legal/privacy"    class="footer__link">Privacy Policy</a>
+          <a href="/legal/cookies" class="footer__link">Cookie Policy</a>
         </nav>
       </div>
 
@@ -733,9 +730,9 @@
         <div class="footer__col-title">Contact</div>
         <nav class="footer__links" aria-label="Contact links">
           <a href="mailto:contact@davidalvarezp.com" class="footer__link">contact@davidalvarezp.com</a>
-          <a href="https://github.com/davidalvarezp"          class="footer__link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/davidalvarezp"  class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-          <a href="https://blog.davidalvarezp.com"             class="footer__link" target="_blank" rel="noopener noreferrer">Blog ↗</a>
+          <a href="https://github.com/davidalvarezp"         class="footer__link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/davidalvarezp" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://blog.davidalvarezp.com"            class="footer__link" target="_blank" rel="noopener noreferrer">Blog ↗</a>
         </nav>
       </div>
 
@@ -743,7 +740,7 @@
 
     <div class="footer__bottom">
       <span class="footer__copy">
-        &copy; 2020–2026 <a href="/">davidalvarezp</a> ·
+        &copy; 2020-2026 <a href="https://davidalvarezp.com">davidalvarezp</a> ·
         <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a>
       </span>
       <span class="footer__status">
@@ -755,6 +752,7 @@
   </div>
 </footer>
 
-<script src="../assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/cookies.js"></script>
 </body>
 </html>
