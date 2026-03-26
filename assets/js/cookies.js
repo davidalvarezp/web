@@ -41,7 +41,7 @@ const CookieConsent = (() => {
   /* ---- Third-party scripts ---- */
   const loadAnalytics = () => {
 
-    const GA_ID = G-PHZELV71D8;
+    const GA_ID = "G-PHZELV71D8";
     
     if (!GA_ID) return;
 
