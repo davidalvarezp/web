@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page not found · davidalvarezp.com</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="https://davidalvarezp.com/images/favicon.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/cookies.css" />
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+    .error-inner {
+      text-align: center;
+      max-width: 560px;
+    }
+    .error-code {
+      font-family: var(--font-mono);
+      font-size: clamp(5rem, 15vw, 9rem);
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      opacity: 0.18;
+      margin-bottom: -20px;
+      user-select: none;
+    }
+    .error-terminal {
+      background: var(--bg-0);
+      border: 1px solid var(--border-med);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin: 0 auto 36px;
+      max-width: 480px;
+      box-shadow: var(--shadow-lg);
+      text-align: left;
+    }
+    .error-terminal__bar {
+      height: 36px;
+      background: var(--bg-3);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      gap: 8px;
+    }
+    .err-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .error-terminal__body {
+      padding: 16px 20px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      line-height: 1.9;
+    }
+    .error-title {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--text-1);
+      margin-bottom: 12px;
+    }
+    .error-desc {
+      font-size: 0.95rem;
+      color: var(--text-2);
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+    .error-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container navbar__inner">
+    <a href="/" class="navbar__logo"><span class="bracket">[</span>davidalvarezp<span class="at-sign">@</span>com<span class="bracket">]</span><span class="logo-cursor" aria-hidden="true"></span></a>
+    <div class="navbar__actions">
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="error-page" role="main">
+  <div class="error-inner">
+    <div class="error-code" aria-hidden="true">404</div>
+
+    <div class="error-terminal" role="presentation" aria-hidden="true">
+      <div class="error-terminal__bar">
+        <span class="err-dot" style="background:#f87171"></span>
+        <span class="err-dot" style="background:#fbbf24"></span>
+        <span class="err-dot" style="background:#4ade80"></span>
+      </div>
+      <div class="error-terminal__body">
+        <span class="t-prompt">david@server:~$ </span><span class="t-cmd">curl <span id="path-display">/this-page</span></span><br>
+        <span class="t-err">curl: (404) Not Found</span><br>
+        <span class="t-comment"># The requested resource does not exist.</span><br>
+        <span class="t-comment"># Check the URL or navigate back.</span><br>
+        <span class="t-prompt">david@server:~$ </span><span class="typewriter-cursor" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <h1 class="error-title">Page not found</h1>
+    <p class="error-desc">
+      The page you're looking for doesn't exist, was moved, or the URL is incorrect.
+    </p>
+    <div class="error-links">
+      <a href="/"          class="btn btn-primary">Go home</a>
+      <a href="/portfolio" class="btn btn-ghost">Portfolio</a>
+      <a href="/services"  class="btn btn-secondary">Services</a>
+    </div>
+  </div>
+</main>
+
+<script src="/assets/js/main.js"></script>
+<script>
+  // Show the actual requested path in the terminal
+  const display = document.getElementById('path-display');
+  if (display) display.textContent = window.location.pathname;
+</script>
+</body>
+</html>

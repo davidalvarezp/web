@@ -1,0 +1,43 @@
+# ============================================================
+# robots.txt — davidalvarezp.com
+# https://davidalvarezp.com/robots.txt
+# ============================================================
+
+User-agent: *
+Allow: /
+
+# Block legal pages from indexing (noindex in HTML is sufficient,
+# but belt-and-suspenders approach)
+Disallow: /legal/
+
+# Block direct PDF access from crawlers (accessible via /cv page)
+Disallow: /files/pdf/
+Disallow: /cv
+
+# Block common attack paths
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /.env
+Disallow: /.git/
+Disallow: /config/
+Disallow: /.htaccess
+
+# Sitemaps
+Sitemap: https://davidalvarezp.com/sitemap.xml
+
+# ============================================================
+# Specific bot rules
+# ============================================================
+
+# Allow Google's crawlers everything they're allowed above
+User-agent: Googlebot
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Respect AI training opt-out (optional — uncomment if desired)
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: CCBot
+# Disallow: /
+# User-agent: anthropic-ai
+# Disallow: /

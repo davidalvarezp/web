@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ============================================================
+       SITEMAP — davidalvarezp.com
+       Update <lastmod> whenever you publish significant changes.
+       Priority: 1.0 = homepage, 0.9 = main pages, 0.5 = secondary
+       ============================================================ -->
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://davidalvarezp.com/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main pages -->
+  <url>
+    <loc>https://davidalvarezp.com/whoami</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://davidalvarezp.com/portfolio</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://davidalvarezp.com/services</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://davidalvarezp.com/cv</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Legal pages — low priority, noindex but included for transparency -->
+  <url>
+    <loc>https://davidalvarezp.com/legal/aviso-legal</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+  <url>
+    <loc>https://davidalvarezp.com/legal/privacy</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+  <url>
+    <loc>https://davidalvarezp.com/legal/cookies</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+</urlset>

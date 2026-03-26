@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO ===================== -->
+  <title>davidalvarezp · Systems Administrator & Cybersecurity Specialist</title>
+  <meta name="description" content="davidalvarezp — Systems Administrator and Cybersecurity Specialist. Expert in Linux, Docker, network security, pentesting, and web infrastructure." />
+  <meta name="keywords" content="sysadmin, cybersecurity, linux, docker, pentesting, networking, DevOps, security audit, web development" />
+  <meta name="author" content="davidalvarezp" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://davidalvarezp.com/" />
+
+  <!-- ===================== OG / Twitter ===================== -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://davidalvarezp.com/" />
+  <meta property="og:title"       content="davidalvarezp · Systems Administrator & Cybersecurity Specialist" />
+  <meta property="og:description" content="Systems Administrator and Cybersecurity Specialist. Expert in Linux, Docker, network security, pentesting, and infrastructure automation." />
+  <meta property="og:image"       content="https://davidalvarezp.com/assets/img/og-image.png" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="twitter:title"      content="davidalvarezp · Systems Administrator & Cybersecurity Specialist" />
+  <meta name="twitter:description" content="Systems Administrator and Cybersecurity Specialist." />
+
+  <!-- ===================== Favicon ===================== -->
+  <link rel="icon"             href="https://davidalvarezp.com/images/favicon.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="https://davidalvarezp.com/images/favicon.webp" />
+
+  <!-- ===================== Fonts ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ===================== Styles ===================== -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+   <link rel="stylesheet" href="/assets/css/cookies.css" />
+
+  <!-- ===================== Schema.org ===================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "davidalvarezp",
+    "url": "https://davidalvarezp.com",
+    "jobTitle": "Systems Administrator & Cybersecurity Specialist",
+    "sameAs": [
+      "https://github.com/davidalvarezp",
+      "https://www.linkedin.com/in/davidalvarezp",
+      "https://www.youtube.com/@davidalvarezp"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ================================================================
+     BACKGROUND GRID
+================================================================ -->
+<div class="bg-grid" aria-hidden="true"></div>
+
+<!-- ================================================================
+     NAVBAR
+================================================================ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container navbar__inner">
+
+    <a href="/" class="navbar__logo" aria-label="davidalvarezp — home">
+      <span class="bracket">[</span>davidalvarezp<span class="at-sign">@</span>com<span class="bracket">]</span><span class="logo-cursor" aria-hidden="true"></span>
+    </a>
+
+    <div class="navbar__links" role="menubar">
+      <a href="/"          class="navbar__link active" role="menuitem">~/</a>
+      <a href="/whoami"    class="navbar__link" role="menuitem">/whoami</a>
+      <a href="/portfolio" class="navbar__link" role="menuitem">/portfolio</a>
+      <a href="/services"  class="navbar__link" role="menuitem">/services</a>
+      <a href="/cv/AlvarezDavid.pdf"  class="navbar__link" role="menuitem" target="_blank">/cv</a>
+      <a href="https://blog.davidalvarezp.com" class="navbar__link" role="menuitem" target="_blank">/blog↗</a>
+    </div>
+
+    <div class="navbar__actions">
+      <button class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+        <!-- Moon icon (shown in dark mode) -->
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Sun icon (shown in light mode) -->
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+
+      <button class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile nav -->
+  <nav id="mobile-menu" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="/"          class="navbar__link active">~/</a>
+    <a href="/whoami"    class="navbar__link">/whoami</a>
+    <a href="/portfolio" class="navbar__link">/portfolio</a>
+    <a href="/services"  class="navbar__link">/services</a>
+    <a href="/cv/AlvarezDavid.pdf"  class="navbar__link" target="_blank">/cv</a>
+    <a href="https://blog.davidalvarezp.com" class="navbar__link" target="_blank">/blog↗</a>
+  </nav>
+</nav>
+
+<!-- ================================================================
+     HERO
+================================================================ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__inner">
+
+      <!-- Left: Content -->
+      <div class="hero__content">
+
+        <div class="hero__prompt">
+          <span>server up · all systems operational</span>
+        </div>
+
+        <h1 class="hero__name">
+          <span class="accent">davidalvarezp</span>
+        </h1>
+
+        <div class="hero__role" aria-label="Role: SysAdmin & Cybersecurity Specialist">
+          <span class="typewriter-text" id="typewriter"></span><span class="typewriter-cursor" aria-hidden="true"></span>
+        </div>
+
+        <p class="hero__desc">
+          Systems Administrator specialized in cybersecurity, infrastructure automation, and web development. <br/>
+          <em>"Making things work without anyone noticing."</em>
+        </p>
+
+        <div class="hero__cta">
+          <a href="/portfolio" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            View Portfolio
+          </a>
+          <a href="/services" class="btn btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Services
+          </a>
+        </div>
+
+        <div class="hero__social" aria-label="Social links">
+          <a href="https://github.com/davidalvarezp" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/davidalvarezp" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:contact@davidalvarezp.com" class="social-link" aria-label="Email contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Terminal window -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="terminal" role="presentation">
+          <div class="terminal__bar">
+            <div class="terminal__dots">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--amber"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+            </div>
+            <span class="terminal__title">bash — david@server:~</span>
+          </div>
+          <div class="terminal__body" id="terminal-body"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     STATS
+================================================================ -->
+<section class="stats" aria-label="Key statistics">
+  <div class="container">
+    <div class="stats__inner">
+      <div class="stat">
+        <span class="stat__value" data-target="6" data-suffix="+">0+</span>
+        <span class="stat__label">Years experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value" data-target="10" data-suffix="+">0+</span>
+        <span class="stat__label">Certifications</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value" data-target="15" data-suffix="+">0+</span>
+        <span class="stat__label">Projects delivered</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value" data-target="100" data-suffix="%">0%</span>
+        <span class="stat__label">Coffee-powered</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     FEATURED WORK
+================================================================ -->
+<section class="section" id="work" aria-labelledby="work-title">
+  <div class="container">
+
+    <div class="fade-in">
+      <div class="section-label">selected work</div>
+      <h2 class="section-title" id="work-title">Featured Projects</h2>
+      <p class="section-desc">A selection of production systems and tools I've designed, built, and maintained.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <article class="project-card fade-in fade-in--delay-1">
+        <span class="project-card__category green">CyberSec · Pentesting</span>
+        <h3 class="project-card__title">WebSec Audit</h3>
+        <p class="project-card__desc">
+          A modular, extensible Bash framework for comprehensive web application security assessments. Automates 15+ attack surface modules, generates structured logs, and produces professional reports in HTML, JSON and TXT.
+        </p>
+        <div class="tech-tags" aria-label="Technologies used">
+          <span class="tech-tag">Bash</span>
+          <span class="tech-tag">XSS</span>
+          <span class="tech-tag">Nmap</span>
+          <span class="tech-tag">Sqlmap</span>
+          <span class="tech-tag">Nikto</span>
+          <span class="tech-tag">SSRF</span>
+          <span class="tech-tag">Debian</span>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/davidalvarezp/websec-audit" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View WebSec Audit on GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://davidalvarezp.github.io/websec-audit" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="See full WebSec Audit documentation.">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Documentation
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card fade-in fade-in--delay-2">
+        <span class="project-card__category">SysAdmin · SaaS</span>
+        <h3 class="project-card__title">ClickDeploy</h3>
+        <p class="project-card__desc">
+          Automated SaaS deployment platform using Docker containers. Provisions WordPress, Moodle, and Nextcloud instances via webhooks and Bash scripts, with TrueNAS storage and Netdata monitoring — zero human intervention.
+        </p>
+        <div class="tech-tags" aria-label="Technologies used">
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Nginx</span>
+          <span class="tech-tag">MariaDB</span>
+          <span class="tech-tag">Bash</span>
+          <span class="tech-tag">TrueNAS</span>
+          <span class="tech-tag">Netdata</span>
+          <span class="tech-tag">Certbot</span>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/davidalvarezp/clickdeploy" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View ClickDeploy on GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="/portfolio#clickdeploy" class="project-card__link" aria-label="See full ClickDeploy case study">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Case Study
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center; margin-top:44px;" class="fade-in">
+      <a href="/portfolio" class="btn btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        View full portfolio
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     SKILLS OVERVIEW
+================================================================ -->
+<section class="section section--sm" id="skills" aria-labelledby="skills-title">
+  <div class="container">
+
+    <div class="fade-in">
+      <div class="section-label">core competencies</div>
+      <h2 class="section-title" id="skills-title">Technical Profile</h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-category-card fade-in fade-in--delay-1">
+        <div class="skill-category-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 class="skill-category-card__name">Cybersecurity</h3>
+        <ul class="skill-category-card__list" aria-label="Cybersecurity skills">
+          <li>Vulnerability auditing &amp; pentesting</li>
+          <li>Threat monitoring &amp; SIEM</li>
+          <li>Hardening &amp; access control</li>
+          <li>Network security &amp; firewalls</li>
+        </ul>
+      </div>
+
+      <div class="skill-category-card fade-in fade-in--delay-2">
+        <div class="skill-category-card__icon green">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+        </div>
+        <h3 class="skill-category-card__name">SysAdmin</h3>
+        <ul class="skill-category-card__list" aria-label="SysAdmin skills">
+          <li>Linux &amp; Windows Server admin</li>
+          <li>Docker · Nginx · automation</li>
+          <li>Monitoring &amp; performance</li>
+          <li>Backup &amp; disaster recovery</li>
+        </ul>
+      </div>
+
+      <div class="skill-category-card fade-in fade-in--delay-3">
+        <div class="skill-category-card__icon amber">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3 class="skill-category-card__name">Web Dev &amp; SEO</h3>
+        <ul class="skill-category-card__list" aria-label="Web development skills">
+          <li>HTML · CSS · JavaScript</li>
+          <li>WordPress &amp; PHP</li>
+          <li>Technical SEO &amp; Core Web Vitals</li>
+          <li>Performance &amp; accessibility</li>
+        </ul>
+      </div>
+
+      <div class="skill-category-card fade-in fade-in--delay-4">
+        <div class="skill-category-card__icon purple">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="skill-category-card__name">Digital Strategy</h3>
+        <ul class="skill-category-card__list" aria-label="Digital strategy skills">
+          <li>Content creation &amp; editing</li>
+          <li>Analytics &amp; campaign optimization</li>
+          <li>Video production &amp; streaming</li>
+          <li>Social media management</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     SERVICES TEASER
+================================================================ -->
+<section class="section section--sm" aria-labelledby="services-teaser-title">
+  <div class="container">
+    <div class="services-teaser fade-in">
+      <div>
+        <div class="services-teaser__label">// available for hire</div>
+        <h2 class="services-teaser__title" id="services-teaser-title">Need a security-focused SysAdmin?</h2>
+        <p class="services-teaser__desc">
+          Security audits, infrastructure design, web development, and more. Let's build something solid together.
+        </p>
+      </div>
+      <div style="flex-shrink:0">
+        <a href="/services" class="btn btn-primary">
+          See Services
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     BLOG POSTS
+================================================================ -->
+<section class="section" id="blog" aria-labelledby="blog-title">
+  <div class="container">
+
+    <div class="fade-in" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:32px;">
+      <div>
+        <div class="section-label">top posts</div>
+        <h2 class="section-title" id="blog-title">From the Blog</h2>
+      </div>
+      <a href="https://blog.davidalvarezp.com" class="btn btn-ghost" style="margin-bottom:16px;">
+        All posts ↗
+      </a>
+    </div>
+
+    <div class="post-list fade-in">
+      <a href="https://blog.davidalvarezp.com" class="post-item" aria-label="Hardening linux">
+        <div>
+          <span class="post-item__tag">SysAdmin</span>
+          <div class="post-item__title">Advanced hardening guide for linux servers.</div>
+        </div>
+        <span class="post-item__date">2025</span>
+      </a>
+      <a href="https://blog.davidalvarezp.com" class="post-item" aria-label="What is DNS?">
+        <div>
+          <span class="post-item__tag">SysAdmin</span> <span class="post-item__tag" style="color:var(--green); background:var(--green-dim); border-color:rgba(74,222,128,0.22);">Networking</span>
+          <div class="post-item__title">What is DNS (Domain Name System)? - How DNS works.</div>
+        </div>
+        <span class="post-item__date">2025</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     FOOTER
+================================================================ -->
+<footer class="footer" aria-label="Site footer">
+  <div class="container">
+
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <span class="footer__logo">[davidalvarezp@com]</span>
+        <p class="footer__tagline">
+          SysAdmin &amp; CyberSec.
+        </p>
+        <div class="footer__social" aria-label="Social links">
+          <a href="https://github.com/davidalvarezp" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/davidalvarezp" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@davidalvarezp" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a2.966 2.966 0 0 0-2.09-2.093C19.4 3.5 12 3.5 12 3.5s-7.399 0-9.409.593a2.966 2.966 0 0 0-2.09 2.093A30.37 30.37 0 0 0 0 12a30.37 30.37 0 0 0 .501 5.814 2.966 2.966 0 0 0 2.09 2.093C4.601 20.5 12 20.5 12 20.5s7.399 0 9.409-.593a2.966 2.966 0 0 0 2.09-2.093A30.37 30.37 0 0 0 24 12a30.37 30.37 0 0 0-.502-5.814zM9.75 15.568V8.432L15.568 12 9.75 15.568z"/></svg>
+</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Navigation</div>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="/"          class="footer__link">Home</a>
+          <a href="/legal"  class="footer__link">Legal Notice</a>
+          <a href="/legal/privacy"    class="footer__link">Privacy Policy</a>
+          <a href="/legal/cookies" class="footer__link">Cookie Policy</a>
+        </nav>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <nav class="footer__links" aria-label="Contact links">
+          <a href="mailto:contact@davidalvarezp.com" class="footer__link">contact@davidalvarezp.com</a>
+          <a href="https://github.com/davidalvarezp"         class="footer__link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/davidalvarezp" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://blog.davidalvarezp.com"            class="footer__link" target="_blank" rel="noopener noreferrer">Blog ↗</a>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__copy">
+        &copy; 2020-2026 <a href="https://davidalvarezp.com">davidalvarezp</a> ·
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a>
+      </span>
+      <span class="footer__status">
+        <span class="status-dot" aria-hidden="true"></span>
+        All systems operational
+      </span>
+    </div>
+
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/cookies.js"></script>
+</body>
+</html>
