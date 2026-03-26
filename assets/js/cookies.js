@@ -40,10 +40,9 @@ const CookieConsent = (() => {
 
   /* ---- Third-party scripts ---- */
   const loadAnalytics = () => {
-    // Replace GA_MEASUREMENT_ID with your real ID when you add analytics
-    // Example: 'G-XXXXXXXXXX'
-    const GA_ID = null; // set to your GA4 ID when ready
 
+    const GA_ID = G-PHZELV71D8;
+    
     if (!GA_ID) return;
 
     if (document.querySelector(`script[src*="${GA_ID}"]`)) return; // already loaded
