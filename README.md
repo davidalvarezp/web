@@ -20,7 +20,7 @@ The site is generated using the static site generator Hugo. It serves as my prof
 - /content           # All site content (under CC BY-NC 4.0)
 - /resources/_gen    # Generated CSS / assets  
 - /static/images     # Static images used in site  
-- /themes/dev-theme  # Custom Hugo theme  (Based on LoveIT)
+- /themes/dap-theme  # Custom Hugo theme  (Based on LoveIT)
 - hugo.toml          # Hugo configuration  
 - .gitignore         # Ignored files/folders  
 
@@ -76,5 +76,5 @@ If you do propose changes:
 ## References & Credits
 
 - Built with Hugo — the site generator powering this repo
-- Custom theme under themes/dev-theme/ based on [LoveIT](https://github.com/dillonzq/LoveIt)
+- Custom theme under theme/dap-theme/ based on [LoveIT](https://github.com/dillonzq/LoveIt)
 - All website content is under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
