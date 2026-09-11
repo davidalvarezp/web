@@ -66,13 +66,13 @@
                             {{- range .Sites -}}
                                 {{- $link := printf "%s404.html" .Home.Permalink -}}
                                 <option value="{{ $link }}"{{ if eq . $.Site }} selected{{ end }}>
-                                    {{- .Language.LanguageName -}}
+                                    {{- .Language.Label -}}
                                 </option>
                             {{- end -}}
                         {{- else -}}
                             {{- range .AllTranslations -}}
                                 <option value="{{ .Permalink }}"{{ if eq .Lang $.Lang }} selected{{ end }}>
-                                    {{- .Language.LanguageName -}}
+                                    {{- .Language.Label -}}
                                 </option>
                             {{- end -}}
                         {{- end -}}
@@ -159,13 +159,13 @@
                             {{- range .Sites -}}
                                 {{- $link := printf "%s404.html" .Home.Permalink -}}
                                 <option value="{{ $link }}"{{ if eq . $.Site }} selected{{ end }}>
-                                    {{- .Language.LanguageName -}}
+                                    {{- .Language.Label -}}
                                 </option>
                             {{- end -}}
                         {{- else -}}
                             {{- range .AllTranslations -}}
                                 <option value="{{ .Permalink }}"{{ if eq .Lang $.Lang }} selected{{ end }}>
-                                    {{- .Language.LanguageName -}}
+                                    {{- .Language.Label -}}
                                 </option>
                             {{- end -}}
                         {{- end -}}
