@@ -4,7 +4,9 @@
     "strictNullChecks": true,
     "allowJs": true,
     "noUnusedLocals": false,
-    "noUnusedParameters": false
+    "noUnusedParameters": false,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   },
   "include": [".astro/types.d.ts", "src/**/*"],
   "exclude": ["node_modules", "dist", "functions", "scripts"]

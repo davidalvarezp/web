@@ -1,5 +1,12 @@
+interface Env {
+  ASSETS: {
+    fetch: (request: Request | string) => Promise<Response>;
+  };
+}
+
 interface EventContext {
   request: Request;
+  env: Env;
   next: () => Promise<Response>;
 }
 
@@ -8,7 +15,7 @@ export async function onRequest(context: EventContext): Promise<Response> {
   const hostname = url.hostname;
   const pathname = url.pathname;
 
-  // Ignorar archivos estáticos (imágenes, fuentes, assets de astro, etc.)
+  // 1. Omitir recursos estáticos compilados
   if (
     pathname.startsWith('/_astro/') ||
     pathname.match(/\.(png|jpg|jpeg|gif|svg|ico|webp|avif|css|js|woff|woff2|ttf|json|txt|xml)$/)
@@ -16,46 +23,41 @@ export async function onRequest(context: EventContext): Promise<Response> {
     return context.next();
   }
 
-  // Identificar el idioma correspondiente según el dominio consultado
+  // 2. Determinar el idioma objetivo según el host
   const isSpanishDomain = hostname.includes('dap.gal');
   const targetLang = isSpanishDomain ? 'es' : 'en';
 
-  // 1. Manejo de URLs que contengan explícitamente el prefijo del idioma (/es/... o /en/...)
-  if (pathname.startsWith('/es/') || pathname === '/es' || pathname.startsWith('/en/') || pathname === '/en') {
-    const isEsPath = pathname.startsWith('/es/') || pathname === '/es';
+  // 3. Manejo de redirecciones para URLs que incluyan /es/ o /en/ explícitamente
+  if (pathname.startsWith('/es') || pathname.startsWith('/en')) {
+    const isEsPath = pathname.startsWith('/es');
     const cleanPath = pathname.replace(/^\/(es|en)/, '') || '/';
 
-    // Si entran a dap.gal/es/blog -> Redirigir a dap.gal/blog
+    // Redirigir si el dominio coincide con el idioma de la URL para limpiar el path
     if (isSpanishDomain && isEsPath) {
       return Response.redirect(`${url.origin}${cleanPath}`, 301);
     }
-    // Si entran a davidalvarezp.com/en/blog -> Redirigir a davidalvarezp.com/blog
     if (!isSpanishDomain && !isEsPath) {
       return Response.redirect(`${url.origin}${cleanPath}`, 301);
     }
-    // Si entran al dominio inglés pidiendo contenido /es/ -> Redirigir a dap.gal/cleanPath
+    // Redirigir al dominio opuesto si intentan acceder a la ruta del idioma contrario
     if (!isSpanishDomain && isEsPath) {
       return Response.redirect(`https://dap.gal${cleanPath}`, 301);
     }
-    // Si entran al dominio español pidiendo contenido /en/ -> Redirigir a davidalvarezp.com/cleanPath
     if (isSpanishDomain && !isEsPath) {
       return Response.redirect(`https://davidalvarezp.com${cleanPath}`, 301);
     }
   }
 
-  // 2. Rewrite transparente para el SSG
-  // Mapear la ruta actual a la carpeta build correspondiente (/es/... o /en/...)
-  const targetPath = `/${targetLang}${pathname === '/' ? '' : pathname}`;
-  const rewriteUrl = new URL(targetPath, url.origin);
+  // 4. Mapeo estático transparente a las carpetas generadas por Astro (/es/... o /en/...)
+  const internalPath = `/${targetLang}${pathname === '/' ? '' : pathname}`;
+  const assetUrl = new URL(internalPath, url.origin);
 
-  // Consultar internamente el asset estático estática generado por Astro
-  const response = await fetch(new Request(rewriteUrl.toString(), context.request));
+  // Consultar directamente a los Assets Estáticos de Cloudflare
+  const assetResponse = await context.env.ASSETS.fetch(new Request(assetUrl.toString(), context.request));
 
-  // Si la ruta existe en esa localización, devolver la respuesta sin cambiar la URL del usuario
-  if (response.status !== 404) {
-    return response;
+  if (assetResponse.status !== 404) {
+    return assetResponse;
   }
 
-  // Si no se encuentra en el idioma solicitado, continuar con la ejecución normal (404 personalizado)
   return context.next();
 }

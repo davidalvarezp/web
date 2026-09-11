@@ -1,13 +1,8 @@
 ---
-interface Props {
-  lang?: 'es' | 'en';
-  currentPath?: string;
-}
-
-const { lang = 'es', currentPath = '' } = Astro.props;
+// src/components/Sidebar.astro
+const { lang = 'es' } = Astro.props;
 const isEs = lang === 'es';
 ---
-
 <nav class="text-xs space-y-6">
   <div>
     <div class="font-bold text-slate-300 uppercase tracking-wider text-[11px] mb-2 text-indigo-400">

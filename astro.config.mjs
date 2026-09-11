@@ -3,7 +3,8 @@ import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
 
 export default defineConfig({
-  site: 'https://davidalvarezp.com', // Dominio principal por defecto
+  site: 'https://davidalvarezp.com',
+  output: 'static',
   integrations: [
     tailwind(),
     mdx(),
@@ -14,10 +15,6 @@ export default defineConfig({
     routing: {
       prefixDefaultLocale: false,
       redirectToDefaultLocale: false,
-    },
-    domains: {
-      es: 'https://dap.gal',
-      en: 'https://davidalvarezp.com',
     },
   },
 });
