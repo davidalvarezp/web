@@ -23,7 +23,7 @@
         "@context": "http://schema.org",
         "@type": "WebSite",
         "url": "{{ .Permalink }}",
-        {{- with .Site.Language.Language.Locale -}}
+        {{- with .Site.Language.Locale -}}
             "inLanguage": "{{ . }}",
         {{- end -}}
         {{- with .Site.Params.Author.name -}}
