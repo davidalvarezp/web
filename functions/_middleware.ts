@@ -1,3 +1,35 @@
+interface Env {}
+
+export const onRequest: PagesFunction<Env> = async (context) => {
+  const url = new URL(context.request.url);
+  const hostname = url.hostname.toLowerCase();
+  const pathname = url.pathname;
+
+  // 1. Bypass total para recursos estáticos generados por Astro o extensiones comunes
+  if (
+    pathname.startsWith('/_astro/') ||
+    pathname.startsWith('/fonts/') ||
+    pathname.startsWith('/images/') ||
+    /\.(css|js|png|jpg|jpeg|svg|webp|ico|woff2?|json|xml|txt)$/i.test(pathname)
+  ) {
+    return context.next();
+  }
+
+  // 2. Si se accede a davidalvarezp.com, servir versión en inglés (/en)
+  if (hostname === 'davidalvarezp.com' || hostname === 'www.davidalvarezp.com') {
+    if (!pathname.startsWith('/en')) {
+      const targetPath = pathname === '/' ? '/en' : `/en${pathname}`;
+      return context.env.ASSETS.fetch(new Request(new URL(targetPath, url.origin), context.request));
+    }
+  }
+
+  return context.next();
+};
+
+
+
+
+
 // @ts-nocheck
 // Cloudflare Pages Functions - Middleware de Enrutamiento Multi-Dominio
 // Ubicación: /functions/_middleware.ts
