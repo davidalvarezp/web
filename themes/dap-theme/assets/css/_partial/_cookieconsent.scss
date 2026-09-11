@@ -1,0 +1,102 @@
+/* ============================
+   COOKIES – ESTILOS GLOBALES
+   Se aplica a banner + floating
+   ============================ */
+
+/* CONTENEDOR GENERAL DEL BANNER */
+.cc-window {
+  background-color: #0d1117 !important; /* fondo del banner */
+  color: #e6edf3 !important;           /* texto */
+  border-radius: 8px;
+}
+
+/* MENSAJE */
+.cc-window .cc-message {
+  color: #e6edf3 !important;
+}
+
+/* ENLACES (ej. "Más información") */
+.cc-window .cc-link {
+  color: #737373 !important;
+  text-decoration: underline;
+}
+
+.cc-window .cc-link:hover,
+.cc-window .cc-link:focus {
+  color: #999 !important;
+}
+
+/* BOTÓN ACEPTAR */
+.cc-window .cc-btn {
+  color: #ffffff !important;              /* texto */
+  background-color: #238636 !important;   /* fondo */
+
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+.cc-window .cc-btn:hover,
+.cc-window .cc-btn:focus {
+  background-color: #2ea043 !important;
+}
+
+/* MODO OSCURO (dependiendo del theme de LoveIt) */
+[theme="dark"] .cc-window .cc-btn {
+  color: #000000 !important;
+  background-color: #fff !important;
+}
+
+[theme="dark"] .cc-window .cc-btn:hover,
+[theme="dark"] .cc-window .cc-btn:focus {
+  background-color: #e6e6e6 !important;
+}
+
+/* ============================
+   FORZAR COLORES EN MÓVIL
+   (el banner usa .cc-floating)
+   ============================ */
+
+.cc-floating,
+.cc-theme-edgeless,
+.cc-bottom,
+.cc-window.cc-floating {
+  background-color: #0d1117 !important;
+  color: #e6edf3 !important;
+}
+
+.cc-floating .cc-btn,
+.cc-theme-edgeless .cc-btn,
+.cc-window.cc-floating .cc-btn {
+  background-color: #238636 !important;
+  color: #ffffff !important;
+}
+
+.cc-floating .cc-btn:hover,
+.cc-theme-edgeless .cc-btn:hover,
+.cc-window.cc-floating .cc-btn:hover {
+  background-color: #2ea043 !important;
+}
+
+/* ENLACE EN MODO FLOATING */
+.cc-floating .cc-link,
+.cc-window.cc-floating .cc-link {
+  color: #737373 !important;
+  text-decoration: underline;
+}
+
+/* ============================
+   EXTRA: Alinear bien en móvil
+   ============================ */
+@media (max-width: 480px) {
+  .cc-window {
+    font-size: 14px !important;
+    padding: 12px !important;
+  }
+
+  .cc-window .cc-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+  }
+}

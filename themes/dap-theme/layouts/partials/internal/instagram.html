@@ -1,0 +1,21 @@
+kk{{/*
+  Instagram partial compatible con Hugo >= 0.144
+  Reemplaza el antiguo render roto de LoveIt.
+  Uso: {{< instagram ID >}}
+*/}}
+
+{{- $id := .Get "id" | default (.Get 0) -}}
+
+{{- if not $id -}}
+  <p><strong>Instagram shortcode error:</strong> falta el ID del post.</p>
+{{- else -}}
+  <div style="max-width:540px; margin:auto;">
+    <blockquote 
+      class="instagram-media" 
+      data-instgrm-permalink="https://www.instagram.com/p/{{ $id }}/"
+      data-instgrm-version="14">
+    </blockquote>
+    <script async src="https://www.instagram.com/embed.js"></script>
+  </div>
+{{- end -}}
+

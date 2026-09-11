@@ -1,0 +1,55 @@
+{{- $pages := where .Site.RegularPages "Section" "!=" "gallery" -}}
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+{{- range $pages }}
+    {{- if and (ne .Kind "taxonomy") (ne .Kind "taxonomyTerm") }}
+
+        {{/* Incluir solo páginas normales y posts (blog) */}}
+        {{- if or (eq .Section "") (eq .Section "blog") }}
+
+        <url>
+            <loc>{{ .Permalink }}</loc>
+
+            {{- if not .Lastmod.IsZero }}
+            <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
+            {{- end }}
+
+            {{- with .Sitemap.ChangeFreq }}
+            <changefreq>{{ . }}</changefreq>
+            {{- end }}
+
+            {{- if ge .Sitemap.Priority 0.0 }}
+                {{- $weeks := div (sub now.Unix .Lastmod.Unix) 604800 -}}
+                {{- $priority := sub 1 (div $weeks 10.0 ) -}}
+                <priority>
+                    {{- if ge .Sitemap.Priority $priority -}}
+                        {{ .Sitemap.Priority }}
+                    {{- else -}}
+                        {{ $priority }}
+                    {{- end }}
+                </priority>
+            {{- end }}
+
+            {{- if .IsTranslated }}
+                {{- range .Translations }}
+                <xhtml:link
+                    rel="alternate"
+                    hreflang="{{ .Lang }}"
+                    href="{{ .Permalink }}"
+                />
+                {{- end }}
+                <xhtml:link
+                    rel="alternate"
+                    hreflang="{{ .Lang }}"
+                    href="{{ .Permalink }}"
+                />
+            {{- end }}
+
+        </url>
+
+        {{- end }}
+    {{- end }}
+{{- end }}
+</urlset>

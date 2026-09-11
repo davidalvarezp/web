@@ -1,0 +1,10 @@
+{{/* 
+   Fallback para el shortcode interno x_simple eliminado.
+   Renderiza el contenido tal cual.
+*/}}
+
+{{- with .Inner -}}
+    {{ . | safeHTML }}
+{{- else -}}
+    {{ . | safeHTML }}
+{{- end -}}

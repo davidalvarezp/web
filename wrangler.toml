@@ -1,6 +1,0 @@
-name = "dap-gal-docs"
-pages_build_output_dir = "dist"
-compatibility_date = "2024-12-01"
-
-[vars]
-ENVIRONMENT = "production"

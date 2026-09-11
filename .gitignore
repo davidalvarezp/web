@@ -1,38 +1,31 @@
-# Build outputs & caches
-dist/
-dist-ssr/
-.astro/
-
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
-
-# Environment variables & secrets
-.env
-.env.local
-.env.*.local
-.env.production
-.env.staging
-
-# Cloudflare Wrangler & Pages
-.wrangler/
-.mf/
-
-# Logs & Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-# Editor & OS files
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-.idea/
+# Hugo
+/public/
+/resources/_gen/
+/hugo_stats.json
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
 
-# GitHub Codespaces & Containers
-.devcontainer/
+# Node / npm / JS (si tu tema usa assets)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Archivos locales
+.env
+*.local
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Carpeta temporal de Hugo modules (pero NO el vendor que queremos subir)
+/resources/_gen/
+/themes/LoveIt/.git/
+
+# Cachés Hugo / módulos
+/.hugo_build.lock

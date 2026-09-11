@@ -1,0 +1,12 @@
+{{/* 
+   Compatibilidad con Hugo >= 0.144
+   El shortcode "_internal/shortcodes/x.html" ya no existe.
+   Este fallback simplemente renderiza el contenido interno 
+   sin llamar a ninguna plantilla interna.
+*/}}
+
+{{- if .Inner -}}
+    {{ .Inner | safeHTML }}
+{{- else -}}
+    {{ . | safeHTML }}
+{{- end -}}

@@ -1,0 +1,3 @@
+{{- $code := .Inner -}}
+{{- $lang := .Type | default "text" -}}
+<pre><code class="language-{{ $lang }}">{{ $code | safeHTML }}</code></pre>
