@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import nodes from '../../data/homelabNodes.json';
+---
+
+<BaseLayout title="Homelab Specs | davidalvarezp.com" description="Hardware and service infrastructure specifications of David Alvarez's Homelab." lang="en">
+  <div class="max-w-5xl mx-auto px-4 py-12">
+    <div class="border-b border-slate-800 pb-6 mb-8">
+      <span class="text-xs font-mono font-bold text-indigo-400 uppercase">Infrastructure</span>
+      <h1 class="text-3xl font-black text-white mt-1">Homelab Nodes</h1>
+      <p class="text-slate-400 text-sm mt-2">Hardware specifications, Proxmox VE hypervisors, and provisioned roles.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {nodes.map(node => (
+        <div class="p-5 rounded-xl border border-slate-800 bg-[#16181f]">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-lg font-bold text-white font-mono">{node.hostname}</h2>
+            <span class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">{node.os}</span>
+          </div>
+          <p class="text-xs text-indigo-400 font-mono mb-4">{node.role.en}</p>
+          <div class="space-y-1.5 text-xs text-slate-300 font-mono bg-[#111318] p-3 rounded-lg border border-slate-800 mb-4">
+            <div><span class="text-slate-500">Hardware:</span> {node.hardware}</div>
+            <div><span class="text-slate-500">IP:</span> {node.ip}</div>
+            <div><span class="text-slate-500">Containers:</span> {node.containers.join(', ')}</div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">{node.details.en}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,38 @@
+---
+import Header from '../components/Header.astro';
+import '../styles/material-theme.css';
+
+interface Props {
+  title: string;
+  description: string;
+  lang?: 'es' | 'en';
+}
+
+const { title, description, lang = 'es' } = Astro.props;
+const currentDomain = lang === 'es' ? 'dap.gal' : 'davidalvarezp.com';
+const currentUrl = Astro.url.pathname;
+---
+
+<!DOCTYPE html>
+<html lang={lang} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={`https://${currentDomain}${currentUrl}`} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#1e2129] text-slate-200 antialiased selection:bg-indigo-500 selection:text-white min-h-screen flex flex-col">
+    <Header lang={lang} currentPath={currentUrl} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+      <p>© {new Date().getFullYear()} David Álvarez Pampillón — <a href="https://github.com/davidalvarezp" class="hover:text-indigo-400">github.com/davidalvarezp</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+---
+// Homepage for davidalvarezp.com (English version)
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="David Álvarez | dap.gal" description="I manage systems, build infrastructure, and document my process. This is my personal space: technical, open, and constantly evolving." lang="en">
+  <section class="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
+    <div class="space-y-6 max-w-2xl">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+        dap.gal
+      </span>
+      <h1 class="text-5xl sm:text-7xl font-black text-white tracking-tight">
+        David Álvarez
+      </h1>
+      <p class="text-lg font-mono font-bold text-emerald-400">
+        SysAdmin · CyberSec · DevOps
+      </p>
+      <p class="text-slate-400 text-sm leading-relaxed max-w-xl mx-auto">
+        I manage systems, build infrastructure, and document my process. This is my personal space: technical, open, and constantly evolving.
+      </p>
+      <div class="flex items-center justify-center gap-4 pt-4">
+        <a href="/en/man-linux/" class="px-5 py-2.5 rounded-lg bg-emerald-500 text-slate-950 font-bold text-xs hover:bg-emerald-400 transition-colors">
+          Linux Manual
+        </a>
+        <a href="/en/blog/" class="px-5 py-2.5 rounded-lg bg-indigo-600 text-white font-bold text-xs hover:bg-indigo-500 transition-colors">
+          Technical Blog
+        </a>
+        <a href="/en/homelab/" class="px-5 py-2.5 rounded-lg border border-slate-700 text-slate-300 font-medium text-xs hover:bg-slate-800 transition-colors">
+          Homelab
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

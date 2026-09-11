@@ -1,0 +1,27 @@
+---
+interface Props {
+  headings?: { depth: number; slug: string; text: string }[];
+  lang?: 'es' | 'en';
+}
+
+const { headings = [], lang = 'es' } = Astro.props;
+---
+
+<div class="text-xs">
+  <div class="font-bold text-slate-300 uppercase tracking-wider text-[11px] mb-3 text-indigo-400">
+    {lang === 'es' ? 'En esta página' : 'On this page'}
+  </div>
+  {headings.length === 0 ? (
+    <p class="text-slate-500 italic text-[11px]">{lang === 'es' ? 'Sin encabezados' : 'No sections'}</p>
+  ) : (
+    <ul class="space-y-2 border-l border-slate-800 pl-3">
+      {headings.map((h) => (
+        <li class={h.depth > 2 ? 'pl-2' : ''}>
+          <a href={`#${h.slug}`} class="text-slate-400 hover:text-indigo-400 transition-colors block leading-tight">
+            {h.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+</div>

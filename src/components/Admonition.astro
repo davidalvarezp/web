@@ -1,0 +1,58 @@
+---
+interface Props {
+  type?: 'note' | 'tip' | 'warning' | 'danger' | 'info';
+  title?: string;
+}
+
+const { type = 'note', title } = Astro.props;
+
+const config = {
+  note: {
+    border: 'border-blue-500',
+    bg: 'bg-blue-500/10',
+    titleColor: 'text-blue-400',
+    defaultTitle: 'Nota',
+    icon: 'ℹ️'
+  },
+  tip: {
+    border: 'border-emerald-500',
+    bg: 'bg-emerald-500/10',
+    titleColor: 'text-emerald-400',
+    defaultTitle: 'Consejo',
+    icon: '💡'
+  },
+  warning: {
+    border: 'border-amber-500',
+    bg: 'bg-amber-500/10',
+    titleColor: 'text-amber-400',
+    defaultTitle: 'Advertencia',
+    icon: '⚠️'
+  },
+  danger: {
+    border: 'border-rose-500',
+    bg: 'bg-rose-500/10',
+    titleColor: 'text-rose-400',
+    defaultTitle: 'Peligro',
+    icon: '🚨'
+  },
+  info: {
+    border: 'border-indigo-500',
+    bg: 'bg-indigo-500/10',
+    titleColor: 'text-indigo-400',
+    defaultTitle: 'Información',
+    icon: '📌'
+  }
+};
+
+const current = config[type] || config.note;
+---
+
+<div class={`my-6 rounded-md border-l-4 ${current.border} ${current.bg} p-4 shadow-sm`}>
+  <div class="flex items-center gap-2 font-semibold text-sm mb-2 ${current.titleColor}">
+    <span>{current.icon}</span>
+    <span>{title || current.defaultTitle}</span>
+  </div>
+  <div class="text-sm text-slate-300 leading-relaxed">
+    <slot />
+  </div>
+</div>

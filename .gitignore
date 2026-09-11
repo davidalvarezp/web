@@ -1,0 +1,38 @@
+# Build outputs & caches
+dist/
+dist-ssr/
+.astro/
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+
+# Cloudflare Wrangler & Pages
+.wrangler/
+.mf/
+
+# Logs & Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor & OS files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# GitHub Codespaces & Containers
+.devcontainer/
