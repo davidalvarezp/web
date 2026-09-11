@@ -10,10 +10,10 @@ title = "davidalvarezp | SysAdmin & CyberSec"
 defaultContentLanguage = "es"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "es"
+locale = "es"
 
 # language name ["English", "简体中文", "Français", "Polski", ...]
-languageName = "Español"
+label = "Español"
 
 # copyright description used only for seo schema
 copyright = "davidalvarezp"
@@ -521,7 +521,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         appId = ""
 
         # automatically adapt the current theme i18n configuration when empty
-        languageCode = ""
+        locale = ""
 
       # Telegram comments config (https://comments.app/)
       [params.page.comment.telegram]
@@ -765,8 +765,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [languages.es]
     baseURL = "https://dap.gal/"
     weight = 1
-    languageCode = "es"
-    languageName = "Español"
+    locale = "es"
+    label = "Español"
     hasCJKLanguage = false
     copyright = "Esta obra está protegida por una licencia Creative Commons Reconocimiento-NoComercial 4.0 Internacional."
     [languages.es.menu]
@@ -865,8 +865,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [languages.en]
     baseURL = "https://davidalvarezp.com/"
     weight = 1
-    languageCode = "en"
-    languageName = "English"
+    locale = "en"
+    label = "English"
     hasCJKLanguage = false
     copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
     [languages.en.menu]
