@@ -1,0 +1,306 @@
+name: Build and publish static site
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+# Seguridad: nada de permisos de escritura salvo donde sea imprescindible.
+permissions:
+  contents: write
+
+# Evita que dos builds de main publiquen simultáneamente.
+concurrency:
+  group: build-site-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  HUGO_ENVIRONMENT: production
+  HUGO_ENV: production
+  HUGO_CACHEDIR: ${{ github.workspace }}/.hugo_cache
+
+jobs:
+
+  # ============================================================
+  # 1. VALIDACIÓN
+  # ============================================================
+  validate:
+    name: Validate source
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      # --------------------------------------------------------
+      # Hugo version
+      # --------------------------------------------------------
+      - name: Read Hugo version
+        id: hugo-version
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ ! -f .hugo-version ]]; then
+            echo "::error::Missing .hugo-version"
+            exit 1
+          fi
+
+          HUGO_VERSION="$(tr -d '[:space:]' < .hugo-version)"
+
+          if [[ ! "$HUGO_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::Invalid Hugo version: $HUGO_VERSION"
+            echo "::error::Expected format: X.Y.Z"
+            exit 1
+          fi
+
+          echo "version=$HUGO_VERSION" >> "$GITHUB_OUTPUT"
+          echo "Hugo version: $HUGO_VERSION"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ steps.hugo-version.outputs.version }}
+          extended: true
+
+      - name: Verify Hugo
+        run: |
+          set -euo pipefail
+
+          hugo version
+          hugo env
+
+      # --------------------------------------------------------
+      # Node.js
+      # --------------------------------------------------------
+      - name: Detect Node.js project
+        id: node-project
+        shell: bash
+        run: |
+          if [[ -f package.json ]]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup Node.js
+        if: steps.node-project.outputs.enabled == 'true'
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Verify Node.js
+        if: steps.node-project.outputs.enabled == 'true'
+        run: |
+          set -euo pipefail
+
+          node --version
+          npm --version
+
+      - name: Install npm dependencies
+        if: steps.node-project.outputs.enabled == 'true'
+        run: npm ci
+
+      # --------------------------------------------------------
+      # Git / repository checks
+      # --------------------------------------------------------
+      - name: Check repository state
+        run: |
+          set -euo pipefail
+
+          git status --short
+          git diff --check
+
+      # --------------------------------------------------------
+      # Basic secret detection
+      # --------------------------------------------------------
+      - name: Check for obvious secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git grep -n -I -E \
+            '-----BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY-----|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9_]{30,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9_-]{20,}' \
+            -- . \
+            ':!package-lock.json'; then
+
+            echo "::error::Potential secret detected in repository"
+            exit 1
+          fi
+
+      # --------------------------------------------------------
+      # Hugo validation
+      # --------------------------------------------------------
+      - name: Validate Hugo configuration
+        run: |
+          set -euo pipefail
+
+          hugo config
+
+      - name: Validate Hugo content
+        run: |
+          set -euo pipefail
+
+          hugo \
+            --environment production \
+            --gc \
+            --minify \
+            --panicOnWarning \
+            --printPathWarnings \
+            --destination /tmp/hugo-validation
+
+  # ============================================================
+  # 2. BUILD
+  # ============================================================
+  build:
+    name: Build static site
+    runs-on: ubuntu-24.04
+    needs: validate
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Read Hugo version
+        id: hugo-version
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          HUGO_VERSION="$(tr -d '[:space:]' < .hugo-version)"
+
+          if [[ ! "$HUGO_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::Invalid Hugo version"
+            exit 1
+          fi
+
+          echo "version=$HUGO_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ steps.hugo-version.outputs.version }}
+          extended: true
+
+      - name: Clean generated directories
+        run: |
+          rm -rf public
+          rm -rf resources
+
+      - name: Build site
+        run: |
+          set -euo pipefail
+
+          hugo \
+            --environment production \
+            --gc \
+            --minify \
+            --panicOnWarning \
+            --printPathWarnings \
+            --destination public
+
+      # --------------------------------------------------------
+      # Verify generated site
+      # --------------------------------------------------------
+      - name: Verify generated site
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ ! -d public ]]; then
+            echo "::error::public directory was not generated"
+            exit 1
+          fi
+
+          if [[ ! -f public/index.html ]]; then
+            echo "::error::public/index.html was not generated"
+            exit 1
+          fi
+
+          FILE_COUNT="$(find public -type f | wc -l)"
+
+          if [[ "$FILE_COUNT" -lt 1 ]]; then
+            echo "::error::Generated site is empty"
+            exit 1
+          fi
+
+          echo "Generated files: $FILE_COUNT"
+
+      - name: Check generated HTML
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if ! grep -q '<html' public/index.html; then
+            echo "::error::public/index.html does not appear to contain HTML"
+            exit 1
+          fi
+
+      - name: Check for accidental secrets in generated site
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if grep -RInE \
+            '-----BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY-----|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9_]{30,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9_-]{20,}' \
+            public; then
+
+            echo "::error::Potential secret detected in generated site"
+            exit 1
+          fi
+
+      # --------------------------------------------------------
+      # Publish generated site as GitHub artifact
+      # --------------------------------------------------------
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-site
+          path: public/
+          if-no-files-found: error
+          retention-days: 7
+
+      # --------------------------------------------------------
+      # Publish to `site` branch
+      # --------------------------------------------------------
+      - name: Publish static site branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          cd public
+
+          git init
+          git checkout -b site
+
+          git add --all
+
+          git commit \
+            -m "build: publish site from ${GITHUB_SHA}" \
+            -m "Source commit: ${GITHUB_SHA}" \
+            -m "Workflow: ${GITHUB_WORKFLOW}"
+
+          git remote add origin \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+          git push --force origin site
