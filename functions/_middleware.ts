@@ -1,73 +1,61 @@
-interface Env {}
+interface EventContext {
+  request: Request;
+  next: () => Promise<Response>;
+}
 
-export const onRequest: PagesFunction<Env> = async (context) => {
+export async function onRequest(context: EventContext): Promise<Response> {
   const url = new URL(context.request.url);
-  const hostname = url.hostname.toLowerCase();
+  const hostname = url.hostname;
   const pathname = url.pathname;
 
-  // 1. Bypass total para recursos estáticos generados por Astro o extensiones comunes
+  // Ignorar archivos estáticos (imágenes, fuentes, assets de astro, etc.)
   if (
     pathname.startsWith('/_astro/') ||
-    pathname.startsWith('/fonts/') ||
-    pathname.startsWith('/images/') ||
-    /\.(css|js|png|jpg|jpeg|svg|webp|ico|woff2?|json|xml|txt)$/i.test(pathname)
+    pathname.match(/\.(png|jpg|jpeg|gif|svg|ico|webp|avif|css|js|woff|woff2|ttf|json|txt|xml)$/)
   ) {
     return context.next();
   }
 
-  // 2. Si se accede a davidalvarezp.com, servir versión en inglés (/en)
-  if (hostname === 'davidalvarezp.com' || hostname === 'www.davidalvarezp.com') {
-    if (!pathname.startsWith('/en')) {
-      const targetPath = pathname === '/' ? '/en' : `/en${pathname}`;
-      return context.env.ASSETS.fetch(new Request(new URL(targetPath, url.origin), context.request));
+  // Identificar el idioma correspondiente según el dominio consultado
+  const isSpanishDomain = hostname.includes('dap.gal');
+  const targetLang = isSpanishDomain ? 'es' : 'en';
+
+  // 1. Manejo de URLs que contengan explícitamente el prefijo del idioma (/es/... o /en/...)
+  if (pathname.startsWith('/es/') || pathname === '/es' || pathname.startsWith('/en/') || pathname === '/en') {
+    const isEsPath = pathname.startsWith('/es/') || pathname === '/es';
+    const cleanPath = pathname.replace(/^\/(es|en)/, '') || '/';
+
+    // Si entran a dap.gal/es/blog -> Redirigir a dap.gal/blog
+    if (isSpanishDomain && isEsPath) {
+      return Response.redirect(`${url.origin}${cleanPath}`, 301);
+    }
+    // Si entran a davidalvarezp.com/en/blog -> Redirigir a davidalvarezp.com/blog
+    if (!isSpanishDomain && !isEsPath) {
+      return Response.redirect(`${url.origin}${cleanPath}`, 301);
+    }
+    // Si entran al dominio inglés pidiendo contenido /es/ -> Redirigir a dap.gal/cleanPath
+    if (!isSpanishDomain && isEsPath) {
+      return Response.redirect(`https://dap.gal${cleanPath}`, 301);
+    }
+    // Si entran al dominio español pidiendo contenido /en/ -> Redirigir a davidalvarezp.com/cleanPath
+    if (isSpanishDomain && !isEsPath) {
+      return Response.redirect(`https://davidalvarezp.com${cleanPath}`, 301);
     }
   }
 
-  return context.next();
-};
+  // 2. Rewrite transparente para el SSG
+  // Mapear la ruta actual a la carpeta build correspondiente (/es/... o /en/...)
+  const targetPath = `/${targetLang}${pathname === '/' ? '' : pathname}`;
+  const rewriteUrl = new URL(targetPath, url.origin);
 
+  // Consultar internamente el asset estático estática generado por Astro
+  const response = await fetch(new Request(rewriteUrl.toString(), context.request));
 
-
-
-
-// @ts-nocheck
-// Cloudflare Pages Functions - Middleware de Enrutamiento Multi-Dominio
-// Ubicación: /functions/_middleware.ts
-
-export const onRequest = async (context: any) => {
-  const url = new URL(context.request.url);
-  const host = (context.request.headers.get('host') || '').toLowerCase();
-
-  // Ignorar peticiones de ficheros estáticos con extensión (_astro, assets, .css, .js, imágenes, etc.)
-  const isStaticAsset = url.pathname.startsWith('/_astro/') || 
-                       url.pathname.startsWith('/assets/') || 
-                       /\.(css|js|png|jpg|jpeg|svg|webp|ico|woff2?|json|xml|txt)$/i.test(url.pathname);
-
-  if (isStaticAsset) {
-    return context.next();
+  // Si la ruta existe en esa localización, devolver la respuesta sin cambiar la URL del usuario
+  if (response.status !== 404) {
+    return response;
   }
 
-  // CASO 1: Dominio en inglés (davidalvarezp.com)
-  // Sirve la versión en inglés (/en/...) directamente desde la raíz
-  if (host.includes('davidalvarezp.com')) {
-    // Si la ruta no empieza ya por /en, reescribimos internamente hacia /en/path
-    if (!url.pathname.startsWith('/en')) {
-      const rewrittenPath = url.pathname === '/' ? '/en' : `/en${url.pathname}`;
-      const rewrittenUrl = new URL(rewrittenPath, url.origin);
-      rewrittenUrl.search = url.search;
-      
-      const response = await context.env.ASSETS.fetch(new Request(rewrittenUrl.toString(), context.request));
-      if (response.status === 404 && !url.pathname.endsWith('/')) {
-        // Intentar con barra final si es necesario
-        const retryUrl = new URL(`${rewrittenPath}/`, url.origin);
-        return context.env.ASSETS.fetch(new Request(retryUrl.toString(), context.request));
-      }
-      return response;
-    }
-  }
-
-  // CASO 2: Dominio en español (dap.gal)
-  // Las rutas en español están en la raíz /, por lo que context.next() las sirve de forma nativa.
-  // Si alguien entra a dap.gal/en/..., opcionalmente podemos redirigir a davidalvarezp.com o permitirlo
+  // Si no se encuentra en el idioma solicitado, continuar con la ejecución normal (404 personalizado)
   return context.next();
-};
+}
