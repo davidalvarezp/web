@@ -8,8 +8,6 @@ author: "dap"
 aliases:
   - about-us
   - about
-  - contact
-  - contacto
   - sobre
   - sobre-mi
 
