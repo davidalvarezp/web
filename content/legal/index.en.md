@@ -4,7 +4,7 @@ slug: legal
 date: 2026-02-09
 draft: false
 description: "Legal Notice of davidalvarezp: information about website ownership and use"
-author: "davidalvarezp"
+author: "dap"
 aliases:
   - legal
   - legal-notice

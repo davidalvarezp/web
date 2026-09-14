@@ -4,7 +4,7 @@ slug: "hardening-linux-avanzado"
 date: 2025-11-27
 lastmod: 2025-12-02
 draft: false
-author: "davidalvarezp"
+author: "dap"
 authorLink: "https://davidalvarezp.com"
 description: "Guía técnica avanzada para sysadmins y profesionales de ciberseguridad sobre hardening en Linux: kernel, red, cifrado, contenedores, auditoría, automatización y buenas prácticas."
 images: [hardening_linux_avanzado.webp]

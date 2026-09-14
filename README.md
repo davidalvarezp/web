@@ -1,4 +1,4 @@
-# davidalvarezp.com
+# dap.gal // davidalvarezp.com
 
 > davidalvarezp's website — built with Hugo and showcasing technical content around SysAdmin web development, DevOps, cybersecurity, and other interests.
 
@@ -39,8 +39,8 @@ If you want to run the website locally:
 - Clone the repo
   
 ```
-git clone https://github.com/davidalvarezp/davidalvarezp.com.git  
-cd davidalvarezp.com  
+git clone https://github.com/davidalvarezp/web.git  
+cd web  
 ```
 
 - Install Hugo (if you don’t have it already). See Hugo docs for installation.

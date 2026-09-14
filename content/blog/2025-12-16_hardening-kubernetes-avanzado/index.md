@@ -3,8 +3,8 @@ title: "Guía Avanzada de Hardening y Detección en Kubernetes 2025‑2026"
 slug: "hardening-kubernetes-avanzado"
 date: 2025-12-16
 lastmod: 2025-12-16
-draft: true
-author: "davidalvarezp"
+draft: false
+author: "dap"
 authorLink: "https://davidalvarezp.com"
 description: "Guía técnica avanzada para SysAdmins y DevSecOps sobre Kubernetes: arquitectura segura, hardening de nodos y contenedores, políticas de seguridad, monitorización, detección de anomalías y mejores prácticas para producción."
 images: [hardening-kubernetes.webp]

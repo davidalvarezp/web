@@ -4,7 +4,7 @@ slug: privacy
 date: 2026-02-09
 draft: false
 description: "Política de Privacidad de davidalvarezp: cómo se gestionan los datos personales"
-author: "davidalvarezp"
+author: "dap"
 aliases:
   - privacy
   - politica-privacidad

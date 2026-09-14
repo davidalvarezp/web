@@ -4,7 +4,7 @@ slug: "dns-avanzado"
 date: 2026-01-12
 lastmod: 2026-01-12
 draft: false
-author: "davidalvarezp"
+author: "dap"
 authorLink: "https://davidalvarezp.com"
 description: "Guía técnica y práctica sobre DNS para SysAdmins y DevOps: cómo funciona realmente, resolución paso a paso, tipos de registros, debugging, Kubernetes, CI/CD y buenas prácticas en infra moderna."
 images: [dns_avanzado.webp]

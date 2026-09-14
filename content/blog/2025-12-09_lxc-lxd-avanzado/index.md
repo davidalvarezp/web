@@ -3,8 +3,8 @@ title: "Guía Avanzada de LXC y LXD"
 slug: "lxc-lxd-avanzado"
 date: 2025-12-09
 lastmod: 2025-12-09
-draft: true
-author: "davidalvarezp"
+draft: false
+author: "dap"
 authorLink: "https://davidalvarezp.com"
 description: "Guía técnica avanzada para SysAdmins y DevOps sobre LXC y LXD: arquitectura, hardening multinivel, clustering, troubleshooting y mejores prácticas de producción."
 images: [lxc-lxd-avanzado.webp]

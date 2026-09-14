@@ -3,7 +3,7 @@ title: "WebSec-Audit: Framework profesional de auditoría de seguridad web en Ba
 date: 2026-03-23
 draft: false
 description: "WebSec-Audit es un framework modular en Bash para auditorías de seguridad web profesionales. Más de 15 módulos: reconocimiento, SQLi, XSS, SSRF, SSL/TLS, CORS, subdomain takeover y más. Genera reportes en HTML, JSON y TXT."
-author: "davidalvarezp"
+author: "dap"
 
 lightgallery: true
 

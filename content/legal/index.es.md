@@ -4,7 +4,7 @@ slug: legal
 date: 2026-02-09
 draft: false
 description: "Aviso Legal de davidalvarezp: información sobre la titularidad y uso del sitio web"
-author: "davidalvarezp"
+author: "dap"
 aliases:
   - legal
   - aviso-legal

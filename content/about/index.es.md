@@ -4,7 +4,7 @@ slug: about
 date: 2025-10-20
 draft: false
 description: "Sobre davidalvarezp: administrador de sistemas, especialista en ciberseguridad y desarrollador"
-author: "davidalvarezp"
+author: "dap"
 aliases:
   - about-us
   - about

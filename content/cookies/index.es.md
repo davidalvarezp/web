@@ -4,7 +4,7 @@ slug: cookies
 date: 2026-02-09
 draft: false
 description: "Política de Cookies de davidalvarezp: información sobre las cookies utilizadas"
-author: "davidalvarezp"
+author: "dap"
 aliases:
   - cookies
   - politica-cookies

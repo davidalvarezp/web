@@ -4,19 +4,19 @@ baseURL = "https://davidalvarezp.com"
 theme = "dap-theme"
 
 # website title
-title = "davidalvarezp | SysAdmin & CyberSec"
+title = "dap | SysAdmin & CyberSec"
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
-defaultContentLanguage = "es"
+defaultContentLanguage = "en"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
-locale = "es"
+locale = "en"
 
 # language name ["English", "简体中文", "Français", "Polski", ...]
-label = "Español"
+label = "English"
 
 # copyright description used only for seo schema
-copyright = "davidalvarezp"
+copyright = "dap"
 
 # whether to use robots.txt
 enableRobotsTXT = true
@@ -48,7 +48,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "Blog"
     url = "/blog/"
     # title will be shown when you hover on this menu link
-    title = "devbydap"
+    title = "Blog"
   [[menu.main]]
     weight = 2
     identifier = "tags"
@@ -81,18 +81,18 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   dateFormat = "2006-01-02"
 
   # website title for Open Graph and Twitter Cards
-  title = "davidalvarezp | SysAdmin & CyberSec"
+  title = "dap | SysAdmin & CyberSec"
 
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "davidalvarezp: Administrador de sistemas, especialista en ciberseguridad y desarrollador web. Descubre más contenido técnico, guías y recursos en mi blog"
+  description = "davidalvarezp: Systems Administrator, Cybersecurity Specialist & DevSecOps."
 
   # website images for Open Graph and Twitter Cards
   images = ["images/logo.webp"]
 
   # Author config
   [params.author]
-    name = "davidalvarezp"
-    email = "contact@davidalvarezp.com"
+    name = "dap"
+    email = "hello@davidalvarezp.com"
     link = "https://davidalvarezp.com"
 
   # Header config
@@ -111,10 +111,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       logo = ""
 
       # title name
-      name = "davidalvarezp"
+      name = "dap"
 
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = "<img src='/images/favicon.webp' alt='davidalvarezp's logo' style='width:24px;height:24px;margin-right:5px;vertical-align:middle;'/>"
+      pre = "<img src='/images/favicon.webp' alt='dap's logo' style='width:24px;height:24px;margin-right:5px;vertical-align:middle;'/>"
 
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
@@ -176,7 +176,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.app]
 
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "davidalvarezp"
+    title = "dap"
 
     # whether to omit favicon resource links
     noFavicon = false
@@ -241,7 +241,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       title = ""
 
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+      subtitle = "davidalvarezp: Systems Administrator, Cybersecurity Specialist & DevSecOps"
 
       # whether to use typeit animation for subtitle
       typeit = true
@@ -262,21 +262,21 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Social config in home page
   [params.social]
     GitHub = "davidalvarezp"
-    Linkedin = ""
-    X = ""
+    Linkedin = "davidalvarezp"
+    X = "sudodap"
     Instagram = ""
     Facebook = ""
-    Telegram = ""
+    Telegram = "sudodap"
     Medium = ""
     Gitlab = ""
     Youtubelegacy = ""
     Youtubecustom = ""
-    Youtubechannel = ""
+    Youtubechannel = "@davidalvarezp"
     Tumblr = ""
     Quora = ""
     Keybase = ""
     Pinterest = ""
-    Reddit = ""
+    Reddit = "davidalvarezp"
     Codepen = ""
     FreeCodeCamp = ""
     Bitbucket = ""
@@ -300,7 +300,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Kickstarter = ""
     Patreon = ""
     Steam = ""
-    Twitch = ""
+    Twitch = "sudodap"
     Strava = ""
     Skype = ""
     Whatsapp = ""
@@ -335,12 +335,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     RootMe= ""
     Malt = ""
     TikTok = ""
-    TryHackMe = ""
+    TryHackMe = "davidalvarezp"
     Codeberg = ""
     HuggingFace = ""
     Threads = ""
     Bluesky = ""
-    Email = ""
+    Email = "hello@davidalvarezp.com"
     RSS = ""
 
   # Page global config
@@ -811,7 +811,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         url = "https://github.com/davidalvarezp"
         title = "GitHub"
     [languages.es.params]
-      description = "davidalvarezp: Administrador de sistemas, especialista en ciberseguridad y desarrollador web. Descubre más contenido técnico, guías y recursos en mi blog."
+      description = "dap: Administrador de sistemas, especialista en ciberseguridad y devsecops. Descubre más contenido técnico, guías y recursos en mi blog."
       keywords = ["administrador de sistemas", "ciberseguridad", "desarrollador web", "devops"]
       [languages.es.params.search]
         enable = true
@@ -832,7 +832,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           enable = true
           gravatarEmail = ""
           avatarURL = "images/logo.webp"
-          title = "davidalvarezp"
+          title = "dap"
           subtitle = "SysAdmin | CyberSec | DevOps"
           typeit = true
           social = true
@@ -840,15 +840,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       [languages.es.params.social]
         GitHub = "davidalvarezp"
         Linkedin = "davidalvarezp"
-        X = ""
+        X = "sudodap"
         Instagram = ""
         Facebook = ""
-        Telegram = ""
+        Telegram = "sudodap"
         Youtubelegacy = ""
         HuggingFace = ""
         Threads = ""
         Phone = ""
-        Email = "contact@davidalvarezp.com"
+        Email = "hello@davidalvarezp.com"
         RSS = false
         #[languages.es.params.social.Mastodon]
         #  id = "@xxxx"
@@ -911,7 +911,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         url = "https://github.com/davidalvarezp"
         title = "GitHub"
     [languages.en.params]
-      description = "davidalvarezp: System administrator, cybersecurity specialist and web developer. Explore technical articles, guides and resources on my blog."
+      description = "dap: System administrator, cybersecurity specialist and developer. Explore technical articles, guides and resources on my blog."
       keywords = ["system administrator", "cybersecurity", "web developer", "devops"]
       [languages.en.params.search]
         enable = true
@@ -932,7 +932,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           enable = true
           gravatarEmail = ""
           avatarURL = "images/logo.webp"
-          title = "davidalvarezp"
+          title = "dap"
           subtitle = "SysAdmin | CyberSec | DevOps"
           typeit = true
           social = true
@@ -940,15 +940,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       [languages.en.params.social]
         GitHub = "davidalvarezp"
         Linkedin = "davidalvarezp"
-        X = ""
+        X = "sudodap"
         Instagram = ""
         Facebook = ""
-        Telegram = ""
+        Telegram = "sudodap"
         Youtubelegacy = ""
         HuggingFace = ""
         Threads = ""
         Phone = ""
-        Email = "contact@davidalvarezp.com"
+        Email = "hello@davidalvarezp.com"
         RSS = false
         #[languages.en.params.social.Mastodon]
         #  id = "@xxxx"

@@ -1,14 +1,24 @@
 ---
 title: "About davidalvarezp"
+slug: about
 date: 2025-10-20
 draft: false
 description: "About davidalvarezp: SysAdmin, CyberSec and DevOps"
+author: "dap"
+aliases:
+  - about-us
+  - about
+  - contact
+  - contacto
+  - sobre
+  - sobre-mi
 
 lightgallery: true
 
 math:
   enable: true
 ---
+
 
 # About Me
 

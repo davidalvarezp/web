@@ -4,7 +4,7 @@ slug: privacy
 date: 2026-02-09
 draft: false
 description: "Privacy Policy of davidalvarezp: how personal data is collected and processed"
-author: "davidalvarezp"
+author: "dap"
 aliases:
   - privacy
   - privacy-policy

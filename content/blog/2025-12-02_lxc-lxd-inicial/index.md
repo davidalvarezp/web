@@ -4,7 +4,7 @@ slug: "lxc-lxd-inicial"
 date: 2025-12-02
 lastmod: 2025-12-09
 draft: false
-author: "davidalvarezp"
+author: "dap"
 authorLink: "https://davidalvarezp.com"
 description: "Guía inicial sobre LXC y LXD: arquitectura, instalación, hardening, clustering, networking, snapshots, troubleshooting y buenas prácticas para entornos de producción."
 images: [lxc-lxd-inicial.webp]

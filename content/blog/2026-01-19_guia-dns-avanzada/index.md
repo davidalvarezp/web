@@ -3,8 +3,8 @@ title: "DNS Avanzado: Guía Completa para SysAdmins, DevOps y Seguridad"
 slug: "dns-avanzado-guia"
 date: 2026-01-19
 lastmod: 2026-01-19
-draft: true
-author: "davidalvarezp"
+draft: false
+author: "dap"
 authorLink: "https://davidalvarezp.com"
 description: "Aprende DNS a nivel experto: resolución paso a paso, registros A, CNAME, MX, TXT, DNSSEC, troubleshooting, Kubernetes, Cloud y CI/CD. Guía definitiva para sysadmins, DevOps y profesionales de seguridad que quieren dominar el Domain Name System."
 images: [dns_avanzado_seo.webp]
