@@ -7,11 +7,17 @@ draft: false
 author: "dap"
 authorLink: "https://davidalvarezp.com"
 description: "Guía técnica avanzada para sysadmins y profesionales de ciberseguridad sobre hardening en Linux: kernel, red, cifrado, contenedores, auditoría, automatización y buenas prácticas."
+featuredImage: "hardening_linux_avanzado.webp"
 images: [hardening_linux_avanzado.webp]
 resources:
 - name: "hardening-linux-avanzado"
   src: "hardening_linux_avanzado.webp"
-
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 30
 tags: [
 "Linux",
 "Hardening",
@@ -28,9 +34,7 @@ categories: [
 "CyberSec",
 "SysAdmin",
 ]
-
 lightgallery: true
-
 ---
 
 # Guía Avanzada de Hardening en Linux para SysAdmins

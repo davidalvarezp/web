@@ -238,10 +238,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       avatarURL = "images/logo.webp"
 
       # title shown in home page (HTML format is supported)
-      title = ""
+      title = "David Álvarez"
 
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "davidalvarezp: Systems Administrator, Cybersecurity Specialist & DevSecOps"
+      subtitle = "SysAdmin | CyberSec | DevOps"
 
       # whether to use typeit animation for subtitle
       typeit = true
@@ -264,7 +264,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     GitHub = "davidalvarezp"
     Linkedin = "davidalvarezp"
     X = "sudodap"
-    Instagram = ""
+    Instagram = "davidalvarezzp"
     Facebook = ""
     Telegram = "sudodap"
     Medium = ""
@@ -826,33 +826,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           index = "index"
           appID = "4D1IDY8JU6"
           searchKey = "05332ac5ed76655a511f0da583a9afac"
-      [languages.es.params.home]
-        rss = 10
-        [languages.es.params.home.profile]
-          enable = true
-          gravatarEmail = ""
-          avatarURL = "images/logo.webp"
-          title = "dap"
-          subtitle = "SysAdmin | CyberSec | DevOps"
-          typeit = true
-          social = true
-          disclaimer = ""
-      [languages.es.params.social]
-        GitHub = "davidalvarezp"
-        Linkedin = "davidalvarezp"
-        X = "sudodap"
-        Instagram = ""
-        Facebook = ""
-        Telegram = "sudodap"
-        Youtubelegacy = ""
-        HuggingFace = ""
-        Threads = ""
-        Phone = ""
-        Email = "hello@davidalvarezp.com"
-        RSS = false
-        #[languages.es.params.social.Mastodon]
-        #  id = "@xxxx"
-        #  prefix = "https://mastodon.technology/"
       
       [languages.es.params.cookieconsent]
         enable = true
@@ -926,33 +899,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           index = "index"
           appID = "4D1IDY8JU6"
           searchKey = "05332ac5ed76655a511f0da583a9afac"
-      [languages.en.params.home]
-        rss = 10
-        [languages.en.params.home.profile]
-          enable = true
-          gravatarEmail = ""
-          avatarURL = "images/logo.webp"
-          title = "dap"
-          subtitle = "SysAdmin | CyberSec | DevOps"
-          typeit = true
-          social = true
-          disclaimer = ""
-      [languages.en.params.social]
-        GitHub = "davidalvarezp"
-        Linkedin = "davidalvarezp"
-        X = "sudodap"
-        Instagram = ""
-        Facebook = ""
-        Telegram = "sudodap"
-        Youtubelegacy = ""
-        HuggingFace = ""
-        Threads = ""
-        Phone = ""
-        Email = "hello@davidalvarezp.com"
-        RSS = false
-        #[languages.en.params.social.Mastodon]
-        #  id = "@xxxx"
-        #  prefix = "https://mastodon.technology/"
 
       [languages.en.params.cookieconsent]
         enable = true
