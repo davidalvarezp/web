@@ -19,7 +19,7 @@ Conforme a la **Ley**, se informa que:
 
 - **Titular del sitio web:** David Á.
 - **Dirección:** Galicia, España.
-- **Correo electrónico:** contact@davidalvarezp.com
+- **Correo electrónico:** mail@dap.gal
 
 ## Uso del sitio web
 

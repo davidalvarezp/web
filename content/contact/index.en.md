@@ -15,7 +15,7 @@ aliases:
 No forms. No bots. Instant message.
 
 
-**Email**:  [hello@davidalvarezp.com](mailto:hello@davidalvarezp.com)
+**Email**:  [mail@davidalvarezp.com](mailto:mail@davidalvarezp.com)
 
 I will answer in less than 48h.
 
@@ -29,4 +29,4 @@ X/Twitter:  [@sudodap](https://x.com/sudodap)
 
 ---
 
-`$ ping hello@davidalvarezp.com`
+`$ ping mail@davidalvarezp.com`

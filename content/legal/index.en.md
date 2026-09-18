@@ -18,7 +18,7 @@ In accordance with applicable laws, the following information is provided:
 
 - **Website Owner:** David Á.
 - **Address:** Galicia, Spain
-- **Email:** contact@davidalvarezp.com
+- **Email:** mail@davidalvarezp.com
 
 ## Website Use
 

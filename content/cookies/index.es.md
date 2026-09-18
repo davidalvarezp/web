@@ -32,4 +32,4 @@ El banner de cookies te permite aceptar su uso de manera informada.
 
 ## Más información
 
-Para más detalles sobre la gestión de cookies, puedes contactarnos en **contact@davidalvarezp.com**.
+Para más detalles sobre la gestión de cookies, puedes contactarnos en **mail@dap.gal**.

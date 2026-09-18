@@ -3,7 +3,7 @@ title: "Currículum Vitae"
 slug: "cv"
 date: 2026-09-18
 draft: false
-description: "CV Profesional de David Álvarez - Administrador de Sistemas, Ciberseguridad & DevSecOps."
+description: "CV de David Álvarez - Administrador de Sistemas, Ciberseguridad & DevSecOps."
 toc:
   enable: true
   auto: true
@@ -17,8 +17,7 @@ code:
   <h1>David Álvarez</h1>
   <h2>Administrador de Sistemas | DevSecOps | Especialista en Ciberseguridad</h2>
   <div class="cv-contacts">
-    <span><i class="fas fa-envelope"></i><a href="mailto:hola@dap.gal" target="_blank">hola@dap.gal</a></span>
-    <span><i class="fas fa-phone"></i> +34 605 78 00 85</span>
+    <span><i class="fas fa-envelope"></i><a href="mailto:mail@dap.gal" target="_blank">mail@dap.gal</a></span>
     <span><i class="fas fa-globe"></i> <a href="https://dap.gal" target="_blank">dap.gal</a></span>
     <span><i class="fab fa-github"></i> <a href="https://github.com/davidalvarezp" target="_blank">GitHub</a></span>
     <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/davidalvarezp" target="_blank">LinkedIn</a></span>

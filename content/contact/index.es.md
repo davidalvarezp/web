@@ -15,7 +15,7 @@ aliases:
 Sin formularios. Sin bots. Comunicación directa.
 
 
-**Email**:  [hi@dap.gal](mailto:hi@dap.gal)
+**Email**:  [mail@dap.gal](mailto:mail@dap.gal)
 
 Respondo en menos de 48h.
 
@@ -29,4 +29,4 @@ X/Twitter:  [@sudodap](https://x.com/sudodap)
 
 ---
 
-`$ ping hi@dap.gal`
+`$ ping mail@dap.gal`

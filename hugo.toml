@@ -37,34 +37,34 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   path = "page"
 
 # Menu config
-[menu]
-  [[menu.main]]
-    weight = 1
-    identifier = "blog"
+# [menu]
+#   [[menu.main]]
+#     weight = 1
+#     identifier = "blog"
     # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
+#     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
-    post = ""
-    name = "Blog"
-    url = "/blog/"
+#     post = ""
+#     name = "Blog"
+#     url = "/blog/"
     # title will be shown when you hover on this menu link
-    title = "Blog"
-  [[menu.main]]
-    weight = 2
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "Tags"
-    url = "/tags/"
-    title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = ""
+#     title = "Blog"
+#   [[menu.main]]
+#     weight = 2
+#     identifier = "tags"
+#     pre = ""
+#     post = ""
+#     name = "Tags"
+#     url = "/tags/"
+#     title = ""
+#   [[menu.main]]
+#     weight = 3
+#     identifier = "categories"
+#     pre = ""
+#     post = ""
+#     name = "Categories"
+#     url = "/categories/"
+#     title = ""
 
 [params]
   # site default theme ["auto", "light", "dark"]
@@ -92,7 +92,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Author config
   [params.author]
     name = "dap"
-    email = "hello@davidalvarezp.com"
+    email = "mail@davidalvarezp.com"
     link = "https://davidalvarezp.com"
 
   # Header config
@@ -339,8 +339,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Codeberg = ""
     HuggingFace = ""
     Threads = ""
-    Bluesky = ""
-    Email = "hello@davidalvarezp.com"
+    Bluesky = "dap.gal"
+    Email = "mail@davidalvarezp.com"
     RSS = ""
 
   # Page global config
@@ -775,7 +775,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         identifier = "about"
         pre = ""
         post = ""
-        name = "Sobre mi"
+        name = "Sobre mí"
         url = "/about/"
         title = ""
       [[languages.es.menu.main]]
@@ -787,7 +787,17 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         url = "/portfolio/"
         title = ""
       [[languages.es.menu.main]]
-        weight = 4
+          weight = 4
+          identifier = "cv"
+          name = "CV"
+          url = "/cv/"
+      [[languages.es.menu.main]]
+          weight = 5
+          identifier = "certifications"
+          name = "Certificaciones"
+          url = "/certs/"
+      [[languages.es.menu.main]]
+        weight = 6
         identifier = "blog"
         pre = ""
         post = ""
@@ -795,21 +805,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         url = "/blog/"
         title = ""
       [[languages.es.menu.main]]
-        weight = 5
-        identifier = "categories"
-        pre = ""
-        post = ""
-        name = "Categorias"
-        url = "/categories/"
-        title = ""
-      [[languages.es.menu.main]]
-        weight = 6
+        weight = 8
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
         post = ""
         name = ""
         url = "https://github.com/davidalvarezp"
         title = "GitHub"
+
     [languages.es.params]
       description = "dap: Administrador de sistemas, especialista en ciberseguridad y devsecops. Descubre más contenido técnico, guías y recursos en mi blog."
       keywords = ["administrador de sistemas", "ciberseguridad", "desarrollador web", "devops"]
@@ -860,29 +863,33 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         url = "/portfolio/"
         title = ""
       [[languages.en.menu.main]]
-        weight = 4
+          weight = 4
+          identifier = "cv"
+          name = "CV"
+          url = "/cv/"
+      [[languages.en.menu.main]]
+          weight = 5
+          identifier = "certifications"
+          name = "Certifications"
+          url = "/certs/"
+      [[languages.en.menu.main]]
+        weight = 6
         identifier = "blog"
         pre = ""
         post = ""
         name = "Blog"
         url = "/blog/"
         title = ""
+
       [[languages.en.menu.main]]
-        weight = 5
-        identifier = "categories"
-        pre = ""
-        post = ""
-        name = "Categories"
-        url = "/categories/"
-        title = ""
-      [[languages.en.menu.main]]
-        weight = 6
+        weight = 8
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
         post = ""
         name = ""
         url = "https://github.com/davidalvarezp"
         title = "GitHub"
+
     [languages.en.params]
       description = "dap: System administrator, cybersecurity specialist and developer. Explore technical articles, guides and resources on my blog."
       keywords = ["system administrator", "cybersecurity", "web developer", "devops"]

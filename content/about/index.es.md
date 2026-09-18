@@ -55,7 +55,7 @@ Mi enfoque combina **seguridad, eficiencia y resultados medibles**. Me interesa 
 
 ## Contacto
 
-Si quieres discutir proyectos de **ciberseguridad, administración de sistemas o desarrollo web**, contáctame en **contact@davidalvarezp.com**.  
+Si quieres discutir proyectos de **ciberseguridad, administración de sistemas o desarrollo web**, contáctame en **mail@dap.gal**.  
 
 > “Haciendo que las cosas funcionen sin que nadie se de cuenta.”  
 

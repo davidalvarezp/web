@@ -56,7 +56,7 @@ My approach combines **security, efficiency, and measurable results**. I aim to 
 
 ## Contact
 
-If you want to discuss **cybersecurity, systems administration, or web development projects**, reach out at **contact@davidalvarezp.com**.  
+If you want to discuss **cybersecurity, systems administration, or web development projects**, reach out at **mail@davidalvarezp.com**.  
 
 > “Making things work without anyone noticing.”  
 

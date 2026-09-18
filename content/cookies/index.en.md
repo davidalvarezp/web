@@ -32,4 +32,4 @@ The cookie banner allows you to give informed consent.
 
 ## More information
 
-For more details about cookie management, you can contact us at **contact@davidalvarezp.com**.
+For more details about cookie management, you can contact us at **mail@davidalvarezp.com**.

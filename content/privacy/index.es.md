@@ -36,7 +36,7 @@ No cedemos tus datos a terceros salvo obligación legal o proveedores de servici
 
 ## Derechos del usuario
 
-Puedes ejercer tus derechos de **acceso, rectificación, supresión, oposición, limitación y portabilidad** enviando un correo a **contact@davidalvarezp.com**.
+Puedes ejercer tus derechos de **acceso, rectificación, supresión, oposición, limitación y portabilidad** enviando un correo a **mail@dap.gal**.
 
 ## Conservación de los datos
 

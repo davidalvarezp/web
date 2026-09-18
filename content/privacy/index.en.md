@@ -36,7 +36,7 @@ We do not share your data with third parties except as required by law or with s
 
 ## User Rights
 
-You can exercise your rights of **access, rectification, deletion, objection, restriction, and portability** by sending an email to **contact@davidalvarezp.com**.
+You can exercise your rights of **access, rectification, deletion, objection, restriction, and portability** by sending an email to **mail@davidalvarezp.com**.
 
 ## Data Retention
 
