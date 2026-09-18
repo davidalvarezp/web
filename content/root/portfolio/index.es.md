@@ -1,5 +1,6 @@
 ---
 title: "Portfolio de davidalvarezp"
+slug: "portfolio"
 date: 2025-10-20
 draft: false
 description: "Portfolio de davidalvarezp: administrador de sistemas, especialista en ciberseguridad y desarrollador"

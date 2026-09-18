@@ -1,5 +1,6 @@
 ---
 title: "Portfolio of davidalvarezp"
+slug: "portfolio"
 date: 2025-10-20
 draft: false
 description: "Portfolio of davidalvarezp: systems administrator, cybersecurity specialist and developer"
