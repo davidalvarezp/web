@@ -1,10 +1,10 @@
 ---
-title: "About davidalvarezp"
+title: "About me"
 slug: about
-date: 2025-10-20
+date: 2026-09-18
 draft: false
-description: "About davidalvarezp: SysAdmin, CyberSec and DevOps"
-author: "dap"
+description: "Professional profile of David Álvarez: Systems Administrator, Cybersecurity specialist, and Web Developer."
+author: "davidalvarezp"
 aliases:
   - about-us
   - about
@@ -17,47 +17,47 @@ math:
   enable: true
 ---
 
-
 # About Me
 
-I am a **systems administrator specialized in cybersecurity**, with experience in **infrastructure management, security audits, web development, SEO, and digital marketing**. I focus on implementing secure, optimized, and scalable solutions, combining technical expertise with digital strategy.
+I am a **Systems Administrator specializing in Cybersecurity**. My focus is on designing, deploying, and maintaining secure, high-performance, and highly scalable IT infrastructures.
+
+I combine technical rigor in systems administration with a business-oriented vision, ensuring operational continuity and data protection in critical environments.
 
 ---
 
 ## Areas of Expertise
 
-### Cybersecurity
-- Managing system and network security in corporate environments.  
-- Vulnerability audits and penetration testing (pentesting).  
-- Implementing security policies, access control, and threat monitoring.  
+### Cybersecurity & Hardening
+* **Ethical Hacking & Pentesting:** Vulnerability audits, penetration testing, and continuous risk assessment.
+* **Defensive Security:** Implementation of access control policies, network segmentation, and identity management.
+* **Monitoring & Incident Response:** Log analysis, early threat detection, and incident mitigation.
 
-### Systems Administration
-- Configuring and maintaining servers, databases, and critical services.  
-- Automating processes and deploying secure, efficient infrastructures.  
-- Troubleshooting issues and optimizing performance in mixed environments (Windows/Linux).  
+### Systems Administration & Cloud
+* **Infrastructure Management:** Deployment, optimization, and maintenance of Linux and Windows Server environments.
+* **Automation & DevOps:** Deployment orchestration, task automation, and CI/CD pipeline maintenance.
+* **Performance & High Availability:** Database configuration, virtualization, and optimization of critical web services.
 
-### Web Development & SEO
-- Developing websites and applications with a focus on performance, accessibility, and scalability.  
-- SEO optimization to improve visibility and search engine ranking.  
-- Integrating multimedia content and analytics tools for traffic and digital marketing.  
+### Web Development & Technical SEO
+* **Web Architecture:** Development of websites and applications focused on loading speed, security, and functional interfaces.
+* **SEO & Analytics:** Technical On-Page optimization, indexing structure, and metric tracking with analytics tools.
+* **CMS & Static Site Generators:** Implementation and deployment of agile solutions using static site generators and content managers.
 
-### Marketing & Content Creation
-- Digital strategy to increase engagement and online presence.  
-- Creating and editing web content, blogs, and social media posts.  
-- Analyzing metrics and optimizing digital campaigns.  
+### Digital Strategy
+* **Online Presence Optimization:** Technical auditing of digital visibility and web performance.
+* **Technical Communication:** Creation of clear technical documentation and structured content strategies.
 
 ---
 
 ## Work Philosophy
 
-My approach combines **security, efficiency, and measurable results**. I aim to **anticipate problems before they occur**, implement sustainable solutions, and ensure technology supports business objectives.  
+I view technology as a strategic pillar that must deliver stability and efficiency. My approach is rooted in **proactive prevention**, **automation of repetitive tasks**, and **delivering measurable results**. The best infrastructure is the one that remains invisible to the end user because it simply never fails.
 
 ---
 
 ## Contact
 
-If you want to discuss **cybersecurity, systems administration, or web development projects**, reach out at **mail@davidalvarezp.com**.  
+Have a project in mind?
 
-> “Making things work without anyone noticing.”  
+Reach out at **[mail@davidalvarezp.com](mailto:mail@davidalvarezp.com)** to discuss how I can help.
 
-*Last updated: November 27, 2025*
+> *"Making things work without anyone noticing."*

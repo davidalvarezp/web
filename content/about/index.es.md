@@ -1,9 +1,9 @@
 ---
-title: "Sobre davidalvarezp"
+title: "Sobre mí"
 slug: about
-date: 2025-10-20
+date: 2026-09-18
 draft: false
-description: "Sobre davidalvarezp: administrador de sistemas, especialista en ciberseguridad y desarrollador"
+description: "Perfil profesional de David Álvarez: Administrador de Sistemas, especialista en Ciberseguridad y Desarrollo Web."
 author: "dap"
 aliases:
   - about-us
@@ -19,44 +19,45 @@ math:
 
 # Sobre mí
 
-Soy **administrador de sistemas especializado en ciberseguridad**, con experiencia en **gestión de infraestructuras, auditorías de seguridad, desarrollo web, SEO y marketing digital**. Me dedico a implementar soluciones seguras, optimizadas y escalables, combinando conocimientos técnicos con estrategia digital.
+Soy **Administrador de Sistemas especializado en Ciberseguridad**. Mi labor se centra en diseñar, desplegar y mantener infraestructuras tecnológicas seguras, de alto rendimiento y altamente escalables.
+
+Combino el rigor técnico de la administración de sistemas con una visión orientada a negocio, garantizando la continuidad operativa y la protección de datos en entornos críticos.
 
 ---
 
-## Áreas de especialización
+## Áreas de Especialización
 
-### Ciberseguridad
-- Gestión de seguridad de sistemas y redes en entornos corporativos.  
-- Auditorías de vulnerabilidades y pruebas de penetración (pentesting).  
-- Implementación de políticas de seguridad, control de accesos y monitorización de amenazas.  
+### Ciberseguridad & Hardening
+* **Hacking Ético y Pentesting:** Auditorías de vulnerabilidades, pruebas de penetración y evaluación continua de riesgos.
+* **Seguridad Defensiva:** Implementación de políticas de control de acceso, segmentación de redes y gestión de identidades.
+* **Monitorización y Respuesta:** Análisis de logs, detección temprana de amenazas y mitigación de incidentes.
 
-### Administración de Sistemas
-- Configuración y mantenimiento de servidores, bases de datos y servicios críticos.  
-- Automatización de procesos y despliegue de infraestructuras seguras y eficientes.  
-- Resolución de incidencias y optimización de rendimiento en entornos mixtos (Windows/Linux).  
+### Administración de Sistemas & Cloud
+* **Gestión de Infraestructuras:** Despliegue, optimización y mantenimiento de entornos Linux y Windows Server.
+* **Automatización y DevOps:** Orquestación de despliegues, automatización de tareas y mantenimiento de pipelines CI/CD.
+* **Rendimiento y Disponibilidad:** Configuración de bases de datos, virtualización y optimización de servicios web críticos.
 
-### Desarrollo Web y SEO
-- Desarrollo de sitios web y aplicaciones con enfoque en rendimiento, accesibilidad y escalabilidad.  
-- Optimización SEO para mejorar visibilidad y posicionamiento en buscadores.  
-- Integración de contenido multimedia y herramientas de análisis de tráfico y marketing digital.  
+### Desarrollo Web & SEO Técnico
+* **Arquitectura Web:** Desarrollo de sitios y aplicaciones centrados en la velocidad de carga, seguridad e interfaz funcional.
+* **SEO & Analítica:** Optimización técnica On-Page, estructura de indexación y seguimiento de métricas con herramientas analíticas.
+* **Sistemas CMS y Estáticos:** Implementación y despliegue de soluciones ágiles mediante generadores estáticos y gestores de contenido.
 
-### Marketing y Creación de Contenido
-- Estrategia digital para aumentar engagement y presencia online.  
-- Creación y edición de contenido web, blogs y redes sociales.  
-- Análisis de métricas y optimización de campañas digitales.  
+### Estrategia Digital
+* **Optimización de Presencia Online:** Auditoría técnica de visibilidad digital y rendimiento web.
+* **Gestión y Divulgación:** Creación de documentación técnica clara y estrategias de contenido estructurado.
 
 ---
 
-## Filosofía de trabajo
+## Filosofía de Trabajo
 
-Mi enfoque combina **seguridad, eficiencia y resultados medibles**. Me interesa **anticipar problemas antes de que ocurran**, implementar soluciones sostenibles y garantizar que la tecnología respalde los objetivos de negocio.  
+Entiendo la tecnología como un pilar estratégico que debe aportar estabilidad y eficiencia. Mi metodología se basa en la **prevención proactiva**, la **automatización de procesos repetitivos** y la **entrega de resultados medibles**. La mejor infraestructura es aquella que resulta invisible para el usuario final porque nunca falla.
 
 ---
 
 ## Contacto
 
-Si quieres discutir proyectos de **ciberseguridad, administración de sistemas o desarrollo web**, contáctame en **mail@dap.gal**.  
+¿Tienes un proyecto en mente? 
 
-> “Haciendo que las cosas funcionen sin que nadie se de cuenta.”  
+Escríbeme a **[mail@dap.gal](mailto:mail@dap.gal)** para evaluar cómo puedo ayudarte.
 
-*Última actualización: 27 de noviembre de 2025*
+> *"Haciendo que las cosas funcionen sin que nadie se dé cuenta."*
