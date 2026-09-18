@@ -23,9 +23,6 @@ code:
     <span><i class="fab fa-github"></i> <a href="https://github.com/davidalvarezp" target="_blank">GitHub</a></span>
     <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/davidalvarezp" target="_blank">LinkedIn</a></span>
   </div>
-  <div class="no-print print-btn-wrapper">
-    <button onclick="window.print()" class="btn-print"><i class="fas fa-print"></i> Guardar como PDF / Imprimir</button>
-  </div>
 </div>
 
 ---
@@ -93,10 +90,10 @@ Enfoque práctico enfocado en automatización, ingeniería de infraestructura re
 
 ## Certificaciones
 
-* **Certificaciones técnicas oficiales:**
-    - [Certificaciones](/certs)
-    - [Credly](https://credly.com/users/davidalvarezp)
-    - [LinkedIn](https://linkedin.com/in/davidalvarezp)
+**Certificaciones técnicas oficiales:**
+  - [-> Certificaciones](/certs)
+  - [Credly](https://credly.com/users/davidalvarezp)
+  - [LinkedIn](https://linkedin.com/in/davidalvarezp)
 
 ---
 
@@ -105,6 +102,8 @@ Enfoque práctico enfocado en automatización, ingeniería de infraestructura re
 * **Home Lab de Alta Disponibilidad:**
 
     Entorno personal multinodo compuesto por 2x Lenovo m920x, Raspberry Pi 5 y 4x PC Custom con **Proxmox VE**, **Debian 13** y contenedores **LXC**. Aloja servicios locales y expuestos bajo políticas estricta de aislamiento y proxy inverso.
+
+<br/>
 
 * **Pentest Stack (Framework de Auditoría Web):**
 
