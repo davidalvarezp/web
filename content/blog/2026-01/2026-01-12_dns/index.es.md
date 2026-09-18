@@ -1,16 +1,16 @@
 ---
 title: "¿Qué es Domain Name System (DNS)?"
-slug: "dns-avanzado"
+slug: "dns"
 date: 2026-01-12
 lastmod: 2026-01-12
 draft: false
 author: "dap"
 authorLink: "https://davidalvarezp.com"
 description: "Guía técnica y práctica sobre DNS para SysAdmins y DevOps: cómo funciona realmente, resolución paso a paso, tipos de registros, debugging, Kubernetes, CI/CD y buenas prácticas en infra moderna."
-images: [dns_avanzado.webp]
+images: [dns.webp]
 resources:
-- name: "dns_avanzado"
-  src: "dns_avanzado.webp"
+- name: "dns"
+  src: "dns"
 
 tags: [
 "DNS",
