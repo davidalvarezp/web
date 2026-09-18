@@ -1,4 +1,55 @@
 // ==============================
 // Custom style
-// 自定义样式
 // ==============================
+/* Corrección de la altura global */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita cualquier desbordamiento horizontal */
+}
+
+/* El contenedor principal de la web */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh; /* Soporte para pantallas móviles modernas (Dynamic Viewport Height) */
+}
+
+/* El contenido crece para llenar el espacio libre */
+.main {
+    flex: 1 0 auto;
+}
+
+/* El footer se mantiene al final sin empujar de más */
+.footer {
+    flex-shrink: 0;
+}
+
+
+// ==============================
+
+
+/* Elimina el desbordamiento por margen en la portada */
+.page.home {
+    box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Previene que los márgenes por defecto de los elementos iniciales y finales empujen la caja */
+.hero-section {
+    margin-top: 0;
+}
+
+.hero-title, 
+.section-title {
+    margin-top: 0;
+}
+
+/* Evita que las cuadrículas (grids) fuercen scroll por gapping */
+.metrics-grid,
+.cert-grid {
+    box-sizing: border-box;
+}
