@@ -1,9 +1,13 @@
 ---
-title: "Portfolio de davidalvarezp"
+title: "Portfolio de Proyectos"
 slug: "portfolio"
-date: 2025-10-20
+date: 2026-09-18
 draft: false
-description: "Portfolio de davidalvarezp: administrador de sistemas, especialista en ciberseguridad y desarrollador"
+description: "Casos de estudio y proyectos destacados en infraestructura, ciberseguridad, desarrollo web y automatización por David Álvarez."
+author: "dap"
+aliases:
+  - portafolio
+  - proyectos
 
 lightgallery: true
 
@@ -11,88 +15,76 @@ math:
   enable: true
 ---
 
-# Portfolio
+# Portfolio de Proyectos
 
-Bienvenido a mi portfolio. Aquí encontrarás algunos de los proyectos en los que he trabajado, combinando **ciberseguridad, administración de sistemas, desarrollo y SEO, entre otras cosas**.
-
-**Índice**
-  - [Administración de sistemas](#administración-de-sistemas)
-  - [Ciberseguridad](#ciberseguridad)
-  - [Desarrollo web & SEO](#desarrollo-web-y-seo)
-  - [Marketing Digital & Creación de Contenido](#marketing-digital-y-creación-de-contenido)
-  - [Formación y Certificaciones](#formación-y-certificaciones)
+Bienvenido a mi portfolio técnico. Aquí muestro casos prácticos y proyectos donde he diseñado, implementado y mantenido soluciones en **infraestructura, automatización, ciberseguridad y arquitectura web**.
 
 ---
 
-## Administración de Sistemas
+## Infraestructura & Automatización (SysAdmin / DevOps)
 
-### ClickDeploy – Plataforma de Despliegue Automatizado
-- **Tecnologías:** Docker, Nginx, MariaDB, PHP, WordPress, WooCommerce, TrueNAS, Bash, SSL (Certbot), Netdata
-- **Rol:** Administración de sistemas, desarrollo full-stack, automatización de despliegues, seguridad y monitorización  
-- **Descripción:** Desarrollo de una plataforma SaaS que automatiza la contratación, configuración y despliegue de servicios web mediante contenedores Docker. ClickDeploy integra un servidor principal de cómputo y un servidor de almacenamiento TrueNAS, ofreciendo despliegue instantáneo de WordPress, Moodle o Nextcloud sin intervención humana. Se implementó un sistema de automatización basado en webhooks y scripts en Bash, monitorización con Netdata y medidas de seguridad avanzadas en servidor, web y base de datos. El proyecto combina conocimientos de administración de sistemas, virtualización, seguridad y desarrollo web, con un modelo de negocio basado en suscripciones mensuales.  
-- **Valor añadido:**  
-  - Despliegue completamente automatizado y escalable de servicios web.  
-  - Arquitectura distribuida y segura con redundancia de datos.  
-  - Integración de base de datos con trazabilidad histórica y auditoría mediante triggers.  
-  - Plataforma lista para producción, con enfoque SaaS y modelo económico viable.  
-- **Enlaces:** [Ver proyecto](https://github.com/davidalvarezp/clickdeploy)
-  
----
+### ClickDeploy – Plataforma SaaS de Despliegue Automatizado
+* **Ámbito:** Administración de Sistemas, Virtualización & Automatización
+* **Stack:** Docker, Bash Scripting, Nginx, MariaDB, TrueNAS, Netdata, Webhooks, PHP, Certbot (SSL)
+* **Repositorio / Demo:** [Ver en GitHub](https://github.com/davidalvarezp/clickdeploy)
 
-## Ciberseguridad
+* **El Desafío:** Eliminar la intervención manual en el aprovisionamiento de entornos web (WordPress, Moodle, Nextcloud) garantizando aislamiento, rendimiento y seguridad por cliente.
+* **La Solución:** Diseño y despliegue de una plataforma SaaS basada en arquitectura distribuida. Integra un nodo de cómputo principal con contenedores Docker y un servidor almacenamiento NAS dedicado (TrueNAS). La automatización se gestiona mediante scripts en Bash y webhooks que realizan el despliegue instantáneo, asignación de dominios, emisión de certificados SSL y auditoría en base de datos mediante triggers.
+* **Impacto & Resultados:**
+  * Despliegues automáticos completos en segundos sin intervención de un SysAdmin.
+  * Trazabilidad histórica y logs de auditoría integrados a nivel de base de datos.
+  * Monitorización en tiempo real de recursos y métricas del servidor mediante Netdata.
 
 ---
 
-## Desarrollo Web y SEO
+## Arquitectura Web, SEO & Optimización
 
-### davidalvarezp
-- **Tecnologías:** HUGO, HTML, CSS, GoLang, SEO
-- **Rol:** Desarrollo full-stack, optimización del rendimiento y SEO  
-- **Descripción:** Creación y mantenimiento de mi sitio web personal utilizando Hugo y GoLang, optimizado para velocidad, accesibilidad y posicionamiento en buscadores. Implementación de un "CMS" estático y estrategia de contenido orientada a mejorar la experiencia del usuario y la visibilidad online.  
-- **Enlace:** [Ver web](https://davidalvarezp.com/)
+### Plataforma Multidominio & CMS Estático (davidalvarezp.com / dap.gal)
+* **Ámbito:** Desarrollo Web, SEO Técnico & CI/CD
+* **Stack:** Hugo (Go), HTML5, CSS3, GitHub Actions, Cloudflare Pages, DNS / CDN Routing
+* **Enlace:** [davidalvarezp.com](https://davidalvarezp.com) / [dap.gal](https://dap.gal)
 
-### Quantum 21 LTD
-- **Tecnologías:** HTML, CSS, PHP, Wordpress, SEO  
-- **Rol:** Desarrollo y Diseño web, optimización del rendimiento y SEO  
-- **Descripción:** Desarrollo de una web de alquiler de coches con sistema de reserva en línea, opciones de entrega en distintas localizaciones y tarifas transparentes. Implementación de funcionalidades para selección de fechas/hora de recogida y devolución, selección de vehículo, seguro completo, asistencia 24/7 y reservas sin depósitos. Además, optimización SEO y adaptación del sitio para ofrecer una experiencia de usuario fluida y optimizada.
-- **Enlace:** [Ver web](https://qcarrentals.com/)
+* **El Desafío:** Crear una infraestructura web propia, ultra rápida, segura y multilingüe (ES/EN) bajo un modelo de arquitectura desacoplada sin dependencias de bases de datos relacionales ni CMS pesados.
+* **La Solución:** Implementación de un generador de sitios estáticos (Hugo) integrado con automatización CI/CD mediante GitHub Actions. Configuración de despliegues segregados en Cloudflare Pages según la rama y el idioma, optimización On-Page estricta (Core Web Vitals) y estructuración de datos para buscadores.
+* **Impacto & Resultados:**
+  * Puntuación de 100/100 en rendimiento, accesibilidad y buenas prácticas en Google Lighthouse.
+  * Despliegues globales inmediatos con redundancia Edge en Cloudflare.
 
-### Trendy Business & Trendy Holiday
-- **Tecnologías:** HTML, CSS, PHP, Wordpress, SEO 
-- **Rol:** Desarrollo web y optimización SEO  
-- **Descripción:** Desarrollo de un portal de espacios de coworking y oficinas privadas en Larnaca, con listado de ubicaciones, salas compartidas, oficinas privadas, salas de reuniones y zonas comunes. Integración de sistema de reserva y contacto, presentación de servicios, estructura clara de las localizaciones y facilidades. Diseño orientado a usabilidad, accesibilidad y experiencia de usuario, con optimización para buscadores.
-- **Enlace:** [Ver web](https://trendybusinesshub.com/)
+### Quantum 21 LTD – Plataforma de Rent a Car
+* **Ámbito:** Desarrollo Web & SEO Técnico
+* **Stack:** WordPress, PHP, JavaScript, CSS3, SEO On-Page
+* **Enlace:** [qcarrentals.com](https://qcarrentals.com/)
 
----
+* **El Desafío:** Desarrollar un portal transaccional de alquiler de vehículos con un motor de reservas ágil, seguro y optimizado para posicionamiento orgánico en motores de búsqueda.
+* **La Solución:** Desarrollo e integración de un sistema de reservas personalizado (fechas, ubicaciones de recogida, seguros adicionales, pagos). Optimización de assets, caché y estructura de enlaces para minimizar tiempos de carga.
+* **Impacto & Resultados:**
+  * Experiencia de usuario fluida y optimizada para dispositivos móviles.
+  * Arquitectura preparada para conversión directa y captación de reservas sin comisiones de terceros.
 
-## Marketing Digital y Creación de Contenido
+### Trendy Business & Trendy Holiday – Portal de Espacios Coworking
+* **Ámbito:** Desarrollo Web & UX
+* **Stack:** WordPress, PHP, HTML5/CSS3, SEO
+* **Enlace:** [trendybusinesshub.com](https://trendybusinesshub.com/)
 
-### IES Teis (Canal de youtube)
-- **Tecnologías:** OBS Studio, DaVinci Resolve, Canva, YouTube Studio
-- **Rol:** Encargado de Streaming y Producción (2023-2026)
-- **Descripción:** Producción y edición de contenido audiovisual, gestión de transmisiones en vivo y optimización del canal.
-- **Enlace:** [Ver canal](https://www.youtube.com/@Webteis)
-
----
-
-## Formación y Certificaciones
-
-- **C. Especialización en Ciberseguridad** - IES de Teis *2026*
-- **C.S. Administración de Sistemas Informáticos en Red** - IES de Teis *2025*
-- **[Junior Cybersecurity Analyst Career](/files/pdf/certificates/Junior_Cybersecurity_Analyst_Career.pdf)** - Cisco *2026*
-- **[Ethical Hacker](/files/pdf/certificates/Ethical_Hacker.pdf)** - Cisco *2026*
-- **[Network Technician Career](/files/pdf/certificates/Network_Technician_Career_Path.pdf)** - Cisco *2026*
-- **[Networking Basics](/files/pdf/certificates/Networking_Basics.pdf)** - Cisco *2026*
-- **[Bash Scripting](/files/pdf/certificates/Bash_Scripting.pdf)** - DataCamp *2025*
-- **[Desarrollo de Apps Móviles](/files/pdf/certificates/Desarrollo_Apps.pdf)** - Google *2020*
-- **[Desarrollo web: HTML y CSS](/files/pdf/certificates/Desarrollo_Web.pdf)** - Google *2020*
+* **El Desafío:** Diseñar la plataforma web para un centro de coworking en Larnaca, destacando planes de reserva de oficinas privadas y salas de reuniones.
+* **La Solución:** Implementación de un catálogo navegable de espacios, reservas online y canal directo de contacto, optimizando el renderizado técnico para mejorar la indexación en buscadores.
 
 ---
 
-# Más
+## Producción Audiovisual & Streaming
 
-Para ver más proyectos y detalles de mi trabajo, visita mi **[LinkedIn](https://www.linkedin.com/in/davidalvarezp)** o mi **[GitHub](https://github.com/davidalvarezp)**.  
+### Producción Técnica & Directos – IES Teis
+* **Ámbito:** Streaming, Edición Audiovisual & Gestión de Medios
+* **Stack:** OBS Studio, DaVinci Resolve, Canva, YouTube Studio
+* **Enlace:** [Canal de YouTube Webteis](https://www.youtube.com/@Webteis)
+
+* **Descripción:** Gestión y producción técnica de eventos institucionales y emisiones en directo (2023-2026). Control de escaletas, flujo de audio/vídeo multi-cámara en OBS Studio, edición posterior y optimización SEO del canal.
 
 ---
 
-*Última actualización: Marzo de 2025*
+## Más Proyectos & Código
+
+Puedes explorar repositorios de código, scripts de automatización e investigaciones adicionales en mis perfiles oficiales:
+
+* **GitHub:** [github.com/davidalvarezp](https://github.com/davidalvarezp)
+* **LinkedIn:** [linkedin.com/in/davidalvarezp](https://www.linkedin.com/in/davidalvarezp)

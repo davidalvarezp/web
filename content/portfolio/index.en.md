@@ -1,9 +1,12 @@
 ---
-title: "Portfolio of davidalvarezp"
+title: "Project Portfolio"
 slug: "portfolio"
-date: 2025-10-20
+date: 2026-09-18
 draft: false
-description: "Portfolio of davidalvarezp: systems administrator, cybersecurity specialist and developer"
+description: "Case studies and featured projects in IT infrastructure, cybersecurity, web architecture, and automation by David Álvarez."
+author: "davidalvarezp"
+aliases:
+  - projects
 
 lightgallery: true
 
@@ -11,88 +14,76 @@ math:
   enable: true
 ---
 
-# Portfolio
+# Project Portfolio
 
-Welcome to my portfolio. Here you will find some of the most representative projects I have worked on, combining **cybersecurity, systems administration, web development and SEO, among other things**.
-
-**Index**
-  - [Systems Administration](#systems-administration)
-  - [Cybersecurity](#cybersecurity)
-  - [Web Development & SEO](#web-development-and-seo)
-  - [Digital Marketing & Content Creation](#digital-marketing-and-content-creation)
-  - [Education and Certifications](#education-and-certifications)
+Welcome to my technical portfolio. Here you will find case studies and projects where I have designed, implemented, and maintained solutions in **IT infrastructure, automation, cybersecurity, and web architecture**.
 
 ---
 
-## Systems Administration
+## Infrastructure & Automation (SysAdmin / DevOps)
 
-### ClickDeploy – Automated Deployment Platform
-- **Technologies:** Docker, Nginx, MariaDB, PHP, WordPress, WooCommerce, TrueNAS, Bash, SSL (Certbot), Netdata
-- **Role:** Systems administration, full-stack development, deployment automation, security and monitoring  
-- **Description:** Development of a SaaS platform that automates the contracting, configuration and deployment of web services using Docker containers. ClickDeploy integrates a main computing server and a TrueNAS storage server, offering instant deployment of WordPress, Moodle or Nextcloud with no human intervention. An automation system based on webhooks and Bash scripts was implemented, along with monitoring using Netdata and advanced security measures at the server, web and database levels. The project combines systems administration, virtualization, security and web development knowledge, with a business model based on monthly subscriptions.  
-- **Added value:**  
-  - Fully automated and scalable deployment of web services.  
-  - Distributed and secure architecture with data redundancy.  
-  - Database integration with historical traceability and auditing through triggers.  
-  - Production-ready platform, with a SaaS-oriented approach and a viable economic model.  
-- **Links:** [View project](https://github.com/davidalvarezp/clickdeploy)
-  
----
+### ClickDeploy – Automated SaaS Deployment Platform
+* **Domain:** Systems Administration, Virtualization & Automation
+* **Stack:** Docker, Bash Scripting, Nginx, MariaDB, TrueNAS, Netdata, Webhooks, PHP, Certbot (SSL)
+* **Repository / Demo:** [View on GitHub](https://github.com/davidalvarezp/clickdeploy)
 
-## Cybersecurity
+* **The Challenge:** Eliminate manual intervention in provisioning web environments (WordPress, Moodle, Nextcloud) while ensuring tenant isolation, performance, and security.
+* **The Solution:** Design and deployment of a distributed SaaS platform. Integrates a main compute node running Docker containers with a dedicated TrueNAS storage server. Automation is handled via Bash scripts and webhooks for instantaneous deployments, domain assignment, SSL certificate generation, and database audit logging.
+* **Impact & Results:**
+  * Complete, zero-touch automated deployments in seconds.
+  * Full audit trail and historical logging at the database level.
+  * Real-time server resource and health monitoring via Netdata.
 
 ---
 
-## Web Development and SEO
+## Web Architecture, SEO & Performance
 
-### davidalvarezp
-- **Technologies:** HUGO, HTML, CSS, GoLang, SEO
-- **Role:** Full-stack development, performance optimization and SEO  
-- **Description:** Creation and maintenance of my personal website using Hugo and GoLang, optimized for speed, accessibility and search engine positioning. Implementation of a static “CMS” and a content strategy focused on improving user experience and online visibility.  
-- **Link:** [View website](https://davidalvarezp.com/)
+### Multi-Domain Static Platform (davidalvarezp.com / dap.gal)
+* **Domain:** Web Development, Technical SEO & CI/CD
+* **Stack:** Hugo (Go), HTML5, CSS3, GitHub Actions, Cloudflare Pages, Edge DNS Routing
+* **Link:** [davidalvarezp.com](https://davidalvarezp.com) / [dap.gal](https://dap.gal)
 
-### Quantum 21 LTD
-- **Technologies:** HTML, CSS, PHP, Wordpress, SEO  
-- **Role:** Web development and design, performance optimization and SEO  
-- **Description:** Development of a car rental website with an online booking system, delivery options at different locations and transparent pricing. Implementation of features for pickup and return date/time selection, vehicle selection, full insurance, 24/7 assistance and no-deposit reservations. In addition, SEO optimization and adaptation of the site to provide a smooth and optimized user experience.
-- **Link:** [View website](https://qcarrentals.com/)
+* **The Challenge:** Build a fast, secure, multi-language (EN/ES) personal web infrastructure without database dependencies or heavy CMS overhead.
+* **The Solution:** Implemented a Static Site Generator (Hugo) integrated with GitHub Actions CI/CD pipelines. Configured segregated multi-domain deployments on Cloudflare Pages, strict On-Page optimization (Core Web Vitals), and structured data markup.
+* **Impact & Results:**
+  * 100/100 scores in Performance, Accessibility, and Best Practices on Google Lighthouse.
+  * Instant global Edge deployment via Cloudflare.
 
-### Trendy Business & Trendy Holiday
-- **Technologies:** HTML, CSS, PHP, Wordpress, SEO 
-- **Role:** Web development and SEO optimization  
-- **Description:** Development of a coworking space and private office portal in Larnaca, featuring listings of locations, shared spaces, private offices, meeting rooms and common areas. Integration of booking and contact systems, service presentation, and a clear structure of locations and facilities. Design focused on usability, accessibility and user experience, with search engine optimization.
-- **Link:** [View website](https://trendybusinesshub.com/)
+### Quantum 21 LTD – Car Rental Platform
+* **Domain:** Web Development & Technical SEO
+* **Stack:** WordPress, PHP, JavaScript, CSS3, On-Page SEO
+* **Link:** [qcarrentals.com](https://qcarrentals.com/)
 
----
+* **The Challenge:** Develop a transactional car rental platform with a fast, secure booking engine optimized for organic search engine ranking.
+* **The Solution:** Custom reservation system integration (pick-up dates, locations, insurance add-ons). Asset optimization, caching, and clean URL structure to minimize loading times.
+* **Impact & Results:**
+  * Smooth mobile-first user experience.
+  * Architecture designed for direct conversions without third-party commission fees.
 
-## Digital Marketing and Content Creation
+### Trendy Business & Trendy Holiday – Coworking Hub Portal
+* **Domain:** Web Development & UX
+* **Stack:** WordPress, PHP, HTML5/CSS3, SEO
+* **Link:** [trendybusinesshub.com](https://trendybusinesshub.com/)
 
-### IES Teis (YouTube channel)
-- **Technologies:** OBS Studio, DaVinci Resolve, Canva, YouTube Studio
-- **Role:** Streaming and Production Manager (2023–2026)
-- **Description:** Production and editing of audiovisual content, management of live streams and channel optimization.
-- **Link:** [View channel](https://www.youtube.com/@Webteis)
-
----
-
-## Education and Certifications
-
-- **Cybersecurity Specialization Degree** – IES de Teis *2026*
-- **Advanced Vocational Training in Networked Computer Systems Administration** – IES de Teis *2025*
-- **[Junior Cybersecurity Analyst Career](/files/pdf/certificates/Junior_Cybersecurity_Analyst_Career.pdf)** - Cisco *2026*
-- **[Ethical Hacker](/files/pdf/certificates/Ethical_Hacker.pdf)** - Cisco *2026*
-- **[Network Technician Career](/files/pdf/certificates/Network_Technician_Career_Path.pdf)** - Cisco *2026*
-- **[Networking Basics](/files/pdf/certificates/Networking_Basics.pdf)** - Cisco *2026*
-- **[Bash Scripting](/files/pdf/certificates/Bash_Scripting.pdf)** – DataCamp *2025*
-- **[Mobile Apps Development](/files/pdf/certificates/Desarrollo_Apps.pdf)** – Google *2020*
-- **[Web Development: HTML and CSS](/files/pdf/certificates/Desarrollo_Web.pdf)** – Google *2020*
+* **The Challenge:** Design a web platform for a coworking center in Larnaca, highlighting private offices and meeting room booking plans.
+* **The Solution:** Navigable space catalog, online booking requests, and direct inquiry channels optimized for fast indexing.
 
 ---
 
-# More
+## Media Production & Live Streaming
 
-To see more projects and details about my work, visit my **[LinkedIn](https://www.linkedin.com/in/davidalvarezp)** or my **[GitHub](https://github.com/davidalvarezp)**.  
+### Technical Broadcasting & Production – IES Teis
+* **Domain:** Live Streaming, Video Editing & Channel Management
+* **Stack:** OBS Studio, DaVinci Resolve, Canva, YouTube Studio
+* **Link:** [YouTube Channel Webteis](https://www.youtube.com/@Webteis)
+
+* **Description:** Technical production and stream management for institutional events (2023–2026). Multi-camera routing, live audio control via OBS Studio, post-production, and YouTube SEO optimization.
 
 ---
 
-*Last updated: March, 2026*
+## More Projects & Source Code
+
+Explore automation scripts, code repositories, and additional research on my profiles:
+
+* **GitHub:** [github.com/davidalvarezp](https://github.com/davidalvarezp)
+* **LinkedIn:** [linkedin.com/in/davidalvarezp](https://www.linkedin.com/in/davidalvarezp)
