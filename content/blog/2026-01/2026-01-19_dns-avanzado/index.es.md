@@ -36,15 +36,6 @@ categories: [
 lightgallery: true
 ---
 
-
-
-Perfecto. A continuación tienes la **GUÍA DEFINITIVA DE DNS – PARTE 1**, redactada íntegramente en **español de España**, con un enfoque **extremadamente técnico, profundo y profesional**, pensada para **sysadmins senior, DevOps, SRE y hackers éticos**.
-
-Esta **Parte 1** cubre **fundamentos profundos, arquitectura interna, funcionamiento real del protocolo, registros, resolución, caché, TTL, EDNS y comportamiento interno de resolvers y servidores autoritativos**.
-La **Parte 2** (que me pedirás después) entrará en **DNSSEC a bajo nivel, seguridad ofensiva y defensiva, BIND/Unbound/PowerDNS avanzado, anycast, cloud DNS, Kubernetes, pentesting DNS, exfiltración, evasión, troubleshooting extremo y automatización**.
-
----
-
 # 📕 LA GUÍA DEFINITIVA DE DNS
 
 ## Parte 1 — Fundamentos Profundos, Arquitectura y Funcionamiento Interno
